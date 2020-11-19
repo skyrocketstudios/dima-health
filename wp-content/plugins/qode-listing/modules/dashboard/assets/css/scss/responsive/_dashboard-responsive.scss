@@ -1,0 +1,113 @@
+.page-template-user-dashboard {
+    .qode-membership-dashboard-content-holder{
+
+        #job-manager-job-dashboard {
+            .job-manager-jobs {
+                @include laptop-landscape-medium{    
+                    td{
+                        &.job_title{
+                            padding-left: 8%;
+                        }
+                    }
+
+                }
+
+                @include ipad-landscape{
+                    td{
+                        &.job_title{
+                            padding-left: 11%;
+
+                            .qode-user-listing-title-image{
+                                left: 2%;
+                            }
+                        }
+                    }
+                }
+
+                @include ipad-portrait{
+                    thead{ 
+                        tr{
+                            th{
+                                padding: 12px;
+                            }
+                        }
+                    }
+
+                    td{
+                        padding: 0.5em;
+
+                        &.job_title{
+                            padding-left: 13%;
+
+                            .qode-user-listing-title-image{
+                                left: 2%;
+                            }
+                        }
+                    }
+                }
+
+                @include phone-landscape{
+                    td{
+
+                        display: block;
+                        padding: 0.3em;
+
+                        &.job_title{
+                            padding: 1em 0 0 22%;
+
+                            .qode-user-listing-title-image{
+                                left: 5%;
+                            }
+
+                            .job-dashboard-actions{
+                                visibility: visible;
+                            }
+                        }
+
+                    }
+
+                    thead{
+                        display: none;
+                    }
+
+                    .qode-user-listing-title-image{
+                        left: 2%;
+                    }
+                }
+
+                @include phone-portrait{
+                    td{
+                        &.job_title{
+                            padding-left: 28%;
+
+                            .qode-user-listing-title-image{
+                                left: 6%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .job-manager-form {
+            .qode-form-add-new-holder{
+                @include ipad-portrait{
+                    width: 100%;
+                }
+            }
+            .qode-ls-field-holder{
+                @include ipad-portrait{
+                    width: 100%;
+                }
+            } 
+        }
+    }
+}
+
+.qode-login-register-holder{
+    div.qode-login-register-content{
+        @include laptop-landscape-medium{
+            margin-top: 25px;
+        }
+    }
+}

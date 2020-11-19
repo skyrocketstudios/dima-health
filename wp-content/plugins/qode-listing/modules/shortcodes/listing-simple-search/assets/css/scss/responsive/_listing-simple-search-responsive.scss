@@ -1,0 +1,30 @@
+/* ==========================================================================
+   Listing Simple Search responsive style - begin
+   ========================================================================== */
+@include phone-landscape{
+    .qode-ls-simple-search-holder {
+
+	    width: 100%;
+	    display: block;
+
+        div.qode-ls-simple-search-holder-part {
+            width: 100%;
+            display: block;
+            border-right: 0;
+            padding: 0;
+            margin: 10px 0;
+
+            &.keyword{
+				border: none;
+	            padding: 0;
+            }
+            &.submit{
+                width: 100%;
+	            padding: 0;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Listing Simple Search responsive style - end
+   ========================================================================== */

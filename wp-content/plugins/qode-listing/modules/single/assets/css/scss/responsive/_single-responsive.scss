@@ -1,0 +1,238 @@
+/* ==========================================================================
+   Single Listing  responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-medium{
+    .qode-listing-single-holder {
+        article {
+            .qode-lst-single-widget-bottom-area {
+                .textwidget {
+                    width: 65%;
+
+                    input.wpcf7-form-control.wpcf7-submit{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape{
+    .qode-listing-single-holder{
+        article {
+	        .qode-ls-single-header {
+		        .qode-listing-single-field:not(:last-child) {
+			        margin-right: 30px;
+		        }
+	        }
+
+	        .qode-ls-contact-info {
+		        .qode-ls-contact-info-inner.left {
+			        margin-right: 5px;
+		        }
+	        }
+
+	        .qode-ls-content-part.left {
+		        .qode-ls-content-part-title {
+			        margin-top: 0;
+		        }
+	        }
+	        .qode-lst-single-widget-bottom-area {
+		        .textwidget {
+			        width: 70%;
+			        .qode-grid-col-8 {
+				        width: 60%;
+				        float: left;
+			        }
+			        .qode-grid-col-4 {
+				        width: 40%;
+				        float: left;
+			        }
+		        }
+		        .qode-grid-col-4 {
+			        text-align: center;
+		        }
+	        }
+
+	        .qode-ls-single-related-posts-holder {
+		        .qode-no-slider article {
+			        padding-right: 36px;
+		        }
+	        }
+
+	        .qode-ls-single-section-inner{
+				&.left {
+					width: 62.5%;
+				}
+		        &.right {
+					width: 37.5%;
+				}
+        }
+
+        }
+    }
+
+}
+@include ipad-portrait {
+    .qode-listing-single-holder{
+        article{
+            .qode-ls-single-section-inner{
+                &.left,
+                &.right{
+                    width: 100%;
+                    padding: 0;
+                }
+
+            }
+
+            #qode-ls-single-map-holder{
+                max-width:100%;
+            }
+            .qode-ls-single-related-posts-holder{
+                .qode-no-slider{
+                    article{
+                        width: 50%;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+	        .qode-ls-user-listing-holder {
+		        margin-bottom: 30px;
+	        }
+	        .qode-ls-single-header {
+		        .qode-ls-single-section-holder.top {
+			        .qode-ls-single-section-inner.right{
+				        text-align: left;
+				        width: 100%;
+			        }
+			        .qode-ls-single-section-inner.left {
+				        width: 100%;
+			       }
+	            }
+		        .qode-listing-single-field {
+			        margin-top: 44px;
+		        }
+	        }
+	        .qode-ls-content-part{
+		        &.left,
+		        &.right{
+			        width: 100%;
+		        }
+
+		        &.left {
+			        margin-bottom: 15px;
+		        }
+	        }
+        }
+
+	    .qode-ls-single-map-holder {
+		    padding: 25px 4% 14px;
+	    }
+    }
+    .qode-ls-single-comments{
+        .qode-comment-form{
+            #respond textarea {
+                & ~ input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+}
+
+@include phone-landscape {
+    .qode-ls-single-comments {
+	    .qode-comments-title-holder {
+		    .select2-container {
+			    position: relative;
+		    }
+	    }
+	    .qode-comments {
+		    .qode-comment-text {
+			    margin-left: 0;
+		    }
+		    .qode-comment-author {
+			    float: none;
+			    width: 100%;
+			    margin-bottom: 30px;
+
+			    .qode-comment-author-name {
+				    text-align: left;
+			    }
+		    }
+	    }
+    }
+
+    .qode-listing-single-holder {
+        article {
+            .qode-ls-single-related-posts-holder {
+                .qode-no-slider {
+                    article {
+                        width: 100%;
+                    }
+                }
+            }
+	        .qode-ls-single-header .qode-ls-header-info {
+		        padding: 0 5px;
+	        }
+        }
+    }
+}
+
+@include phone-portrait{
+    .single-job_listing {
+        .qode-listing-single-holder {
+            .qode-lst-single-widget-bottom-area {
+                .textwidget {
+                    width: 90%;
+                }
+            }
+            article {
+                .qode-ls-single-header {
+                    .qode-ls-single-section-holder.top {
+                        .qode-ls-single-section-inner.left {
+                            width: 100%;
+                            .qode-ls-single-part-holder {
+                                &.left,
+                                &.right {
+                                    display: block;
+                                    width: 100%;
+                                    padding-left: 0;
+                                }
+                            }
+                        }
+	                    .qode-ls-single-section-inner.right {
+		                    min-height: initial;
+		                    padding: 24px 0px 10px;
+	                    }
+                    }
+	                .qode-ls-item-image {
+		                margin-bottom: 15px;
+	                }
+	               .qode-ls-single-part-inner.bottom {
+		                margin-top: 15px;
+	                }
+                }
+            }
+        }
+
+        .pp_content,
+        .pp_content iframe,
+        .pp_hoverContainer {
+            width: 95% !important;
+            height: 100% !important;
+        }
+    }
+
+	.qode-ls-enquiry-inner{
+		width: 250px;
+		padding: 30px;
+	}
+
+}
+/* ==========================================================================
+   Single Listing responsive style - end
+   ========================================================================== */

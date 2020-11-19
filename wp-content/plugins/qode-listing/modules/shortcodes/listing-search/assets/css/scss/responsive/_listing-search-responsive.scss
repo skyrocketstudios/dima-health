@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Listing Search  responsive style - begin
+   ========================================================================== */
+@include laptop-landscape-large {
+    .qode-ls-main-search-holder {
+        div.qode-ls-main-search-holder-part {
+            .qode-ls-slider-wrapper {
+                .qode-price-slider-holder {
+                    left: 3px;
+                }
+            }
+        }
+    }
+}
+@include laptop-landscape-medium{
+    .qode-ls-main-search-holder{
+        div.qode-ls-main-search-holder-part{
+            .qode-ls-slider-wrapper{
+                .qode-price-slider-holder{
+                    left: 3px;
+                    width: 120px;
+                }
+                .rangeslider--horizontal{
+                    width: 150px;
+                }
+                >span{
+                    margin-left: 55px;
+                }
+            }
+        }
+    }
+}
+
+@include ipad-landscape {
+    .qode-ls-main-search-holder{
+        padding: 18px 20px 14px 5px;
+
+        div.qode-ls-main-search-holder-part{
+
+            padding-left: 40px;
+
+            div.qode-ls-slider-wrapper{
+                .qode-price-slider-response{
+                    padding: 5px 15px;
+                    top: -20px;
+                    width: 70px;
+                    height: 17px;
+                    line-height: 17px;
+                }
+            }
+        }
+
+        .select2-dropdown-open{
+            z-index: 99;
+        }
+    }
+}
+@include ipad-portrait{
+    .qode-ls-main-search-holder {
+
+	    width: 100%;
+	    display: block;
+	    padding: 18px 20px 40px 5px;
+
+        div.qode-ls-main-search-holder-part {
+            width: 100%;
+            display: block;
+            border-right: 0;
+            padding-left: 51px;
+            margin: 10px 0;
+
+            &.submit{
+                width: 100%;
+                padding-left: 25px;
+	            margin-top: 30px;
+            }
+        }
+    }
+}
+/* ==========================================================================
+   Listing Search responsive style - end
+   ========================================================================== */

@@ -1,0 +1,18 @@
+/* ==========================================================================
+   Listing Testimonials responsive style - begin
+   ========================================================================== */
+
+@include ipad-portrait {
+
+	.qode-ls-testimonials {
+		.qode-ls-testimonials-inner{
+
+			article {
+				width: 100% !important; // !important is set to override all other stronger selectors
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Listing Testimonials responsive style - end
+   ========================================================================== */

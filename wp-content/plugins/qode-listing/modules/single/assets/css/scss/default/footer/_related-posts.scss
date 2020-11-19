@@ -1,0 +1,188 @@
+.qode-listing-single-holder{
+	article{
+		.qode-ls-single-related-posts-holder{
+            
+            i {
+	            vertical-align: text-top;
+                margin-right: 6px;
+                color: #484848;
+	            font-size: 25px;
+            }
+            
+            .qode-related-post-holder{
+				padding-bottom: 100px;
+
+                .qode-owl-slider .owl-nav{
+                    .owl-prev,
+                    .owl-next{
+                        >span{
+                            color: $grey-color;
+                        }
+                        &:hover{
+                            span{
+                                color: $first-main-color;
+                            }
+                        }
+                    }
+
+					.owl-next{
+						right: -45px;
+					}
+
+					.owl-prev{
+						left: -45px;
+					}
+
+					&.disabled{
+						display: none;
+					}
+
+					.qode-next-icon,
+					.qode-prev-icon{
+						background-color: transparent;
+					}
+                }
+	            .qode-owl-slider {
+		            .owl-dots {
+			            margin: 39px 0 0;
+
+			            .owl-dot {
+				            span {
+					            -webkit-box-shadow: none;
+					            -moz-box-shadow: none;
+					            box-shadow: none;
+					            border: 4px solid #cdcdcd;
+					            background-color: #fff;
+				            }
+				            &.active span {
+					            background-color: #fff;
+					            border-color: $first-main-color;
+				            }
+			            }
+		            }
+	            }
+            }
+			.qode-no-slider{
+				margin: 0 -18px;
+				article{
+					width: 25%;
+					padding: 0 18px;
+					box-sizing: border-box;
+				}
+			}
+            
+            .qode-ls-related-post-title{
+                margin-bottom: 35px;
+                display: inline-block;
+            }
+
+			.qode-ls-related-item{
+				@include qodeRelativeHolderLayout();
+				vertical-align: top;
+				box-sizing: border-box;
+
+				.qode-ls-item-image{
+					@include qodeRelativeHolderLayout();
+					a{
+						display: block;
+						img{
+							vertical-align: middle;
+						}
+					}
+				}
+				.qode-listing-title{
+					margin: 3px 0 10px;
+				}
+				.qode-listing-cat-wrapper{
+					& > a{
+						&:not(:last-child){
+							&:after {
+								content: ', ';
+								color: inherit;
+							}
+						}
+
+						color: $first-main-color;
+
+						&:hover {
+							color: #484848;
+						}
+					}
+
+					.qode-tax-name{
+						font-size: 12px;
+					}
+				}
+
+				.qode-listing-type-wrapper {
+
+					position: absolute;
+					top: 5px;
+					right: 5px;
+
+					a{
+						display: block;
+						background-color: #ff2d00;
+						font-size: 12px;
+						font-weight: 600;
+						letter-spacing: 0.2px;
+						padding: 0 8px;
+						color: #fff;
+						text-transform: uppercase;
+					}
+				}
+				.qode-ls-item-inner{
+					box-sizing: border-box;
+					padding: 19px 20px 25px;
+					background-color: #fff;
+					border: 1px solid #dbdbdb;
+
+
+					.qode-ls-item-footer{
+
+						padding-top: 20px;
+
+						.qode-ls-disc-price-amount {
+							font-size: 19px;
+							font-weight: 600;
+							padding-bottom: 2px;
+						}
+
+						.qode-ls-author-text,
+						.qode-listing-cat-wrapper {
+							font-size: 12px;
+							font-weight: 500;
+							text-transform: uppercase;
+							line-height: 1.4em;
+						}
+
+					}
+
+				}
+			}
+
+            /***** Listing Advanced Search Columns Space - end *****/
+
+		}
+	}
+
+	.qode-lst-single-widget-bottom-area{
+
+		margin: auto;
+		padding: 40px 0;
+		border: none;
+
+		.textwidget{
+			margin: auto;
+			width: 45%;
+
+			.qode-grid-col-4{
+				.ajax-loader{
+					position: absolute;
+					top: 50%;
+					@include qodeTransform(translateY(-50%));
+				}
+			}
+		}
+	}
+}

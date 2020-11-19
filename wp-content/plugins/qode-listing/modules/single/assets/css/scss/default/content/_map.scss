@@ -1,0 +1,18 @@
+.qode-listing-single-holder{
+	.qode-ls-single-map-holder{
+		position: relative;
+		box-sizing: border-box;
+		padding: 25px 7% 14px;
+		width: 100%;
+		border: 1px solid $default-border-color;
+		border-radius: 0 0 3px 3px;
+		box-shadow: 1px 1px 3px 0px rgba(0,0,0, 0.1);
+	}
+	#qode-ls-single-map-holder{
+		max-height: 323px;
+		max-width: 323px;
+	}
+	.qode-ls-address-title{
+		margin: 20px 0 13px;
+	}
+}

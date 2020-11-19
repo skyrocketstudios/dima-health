@@ -1,0 +1,38 @@
+/* ==========================================================================
+   Listing Category shortcodes responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+
+	.qode-ls-categories-holder {
+		&.qode-ls-gallery-three-columns{
+			.qode-ls-gallery-sizer,
+			.qode-ls-gallery-item {
+				width: 50%;
+			}
+
+			.qode-ls-gallery-item {
+
+				&.qode-ls-gallery-square-big,
+				&.qode-ls-gallery-rec-landscape {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 680px) {
+
+	.qode-ls-categories-holder {
+		&.qode-ls-gallery-three-columns{
+			.qode-ls-gallery-sizer,
+			.qode-ls-gallery-item {
+				width: 100%;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Listing Category shortcodes responsive style - end
+   ========================================================================== */

@@ -1,0 +1,28 @@
+.qode-listing-single-holder{
+	article{
+		.qode-ls-contact-info-holder{
+			margin-top: 25px;
+		}
+		.qode-ls-contact-info{
+			margin-bottom: 5px;
+			.qode-ls-contact-info-inner{
+				display: inline-block;
+				&.left{
+					margin-right: 8px;
+					font-size: 17px;
+					color: #b2b2b2;
+
+					i:before {
+						vertical-align: middle;
+					}
+				}
+				&.right{
+					a{
+						color: $default-text-color;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}

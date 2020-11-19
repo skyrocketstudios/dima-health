@@ -1,0 +1,143 @@
+.qode-ls-list-holder{
+	.qode-ls-list-items-holder{
+		.qode-ls-item{
+			@include qodeRelativeHolderLayout();
+			vertical-align: top;
+			box-sizing: border-box;
+
+			.qode-ls-item-image{
+				@include qodeRelativeHolderLayout();
+				a{
+					img{
+						vertical-align: middle;
+					}
+				}
+			}
+			.qode-listing-cat-wrapper{
+				& > a{
+					&:not(:last-child){
+						&:after {
+							content: ', ';
+							color: inherit;
+						}
+					}
+
+					color: $first-main-color;
+
+					&:hover {
+						color: #484848;
+					}
+				}
+
+				.qode-tax-name{
+					font-size: 12px;
+				}
+			}
+
+			.qode-listing-type-wrapper {
+
+				position: absolute;
+				top: 5px;
+				right: 5px;
+
+				a{
+					display: block;
+					background-color: #ff2d00;
+					font-size: 12px;
+					font-weight: 600;
+					letter-spacing: 0.2px;
+					padding: 0 8px;
+					color: #fff;
+					text-transform: uppercase;
+				}
+			}
+			.qode-ls-item-inner{
+				box-sizing: border-box;
+				padding: 19px 20px 25px;
+				background-color: #fff;
+				border: 1px solid #dbdbdb;
+
+
+				.qode-ls-item-footer{
+
+					padding-top: 20px;
+
+					.qode-ls-disc-price-amount {
+						font-size: 19px;
+						font-weight: 600;
+						padding-bottom: 2px;
+					}
+
+					.qode-ls-author-text,
+					.qode-listing-cat-wrapper {
+						font-size: 12px;
+						font-weight: 500;
+						text-transform: uppercase;
+						line-height: 1.4em;
+					}
+
+				}
+
+			}
+
+		}
+		/***** Listing List Columns Space - begin *****/
+
+		$columns_space_label: ('no', 'tiny', 'small', 'normal', 'big');
+		$columns_space: (0, 5, 10, 17, 35);
+
+		@for $i from 0 to length($columns_space_label) {
+			&.qode-ls-list-#{nth($columns_space_label,$i+1)}-space {
+				$item_space: nth($columns_space, $i+1);
+				$item_bottom_margin: $item_space * 2;
+
+				.qode-ls-list-inner {
+					margin: 0 -#{$item_space}px;
+				}
+
+				article {
+					padding: 0 #{$item_space}px;
+					margin: 0 0 #{$item_bottom_margin}px;
+				}
+			}
+		}
+		/***** Listing List Search Columns Space - end *****/
+
+		/***** Listing List Columns Width - begin *****/
+
+		$columns_number: ('two', 'three', 'four', 'five','six');
+
+		@for $i from 0 to length($columns_number) {
+			&.qode-ls-list-#{nth($columns_number,$i+1)}-columns {
+
+				article {
+					width: 100% / ($i+2);
+				}
+
+				@if ($i > 1) { // set different break point for four and five columns
+					@media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				} @else {
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+		/***** Listing list Columns Width - end *****/
+	}
+
+}

@@ -1,0 +1,125 @@
+.page-template-user-dashboard{
+    .qode-membership-dashboard-content-holder{
+        
+        #job-manager-job-dashboard{
+
+            margin-top: -27px;
+
+            .job-manager-jobs{
+				width: 100%;
+                margin-top: 33px;
+                thead{
+                    tr{
+                        background-color: $first-main-color;
+                        border-color: $first-main-color;
+                        font-weight: 600;
+                        
+                        th{
+                            font-size: 16px;
+                            text-transform: uppercase;
+                            padding: 18px;
+                            color: #ffffff;
+                            
+                            &.job_title{
+                                text-align: left;
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                }
+                
+                tr{
+                    border: 1px solid $default-border-color;
+                }
+                
+                td{
+                    padding: 1.1em;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    color: #353535;
+                    
+                    &.job_title{
+                        text-align: left;
+                        padding-left: 7%;                        
+                        font-weight: 600;
+                        font-size: 16px;
+
+                        small{
+                            font-weight: 400;
+                        }
+
+                        .job-dashboard-actions{
+                            li{
+                                a {
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                        }
+
+                    }
+                }
+                    
+                .qode-user-listing-title-image{
+                    background-size: cover;
+                    width:55px;
+                    height: 55px;
+                    position: absolute;
+                    left: 1%;
+                }
+
+            }
+
+            .job-manager-pagination{
+                margin: 57px 0;
+                float: left;
+
+                ul {
+                    li {
+                        margin-right: 6px;
+                        border: none;
+
+                        span{
+                            font-size: 12px;
+                        
+
+                            &.current{
+                                background-color: $first-main-color;
+                                color: #fff;
+                                padding: 16px;
+                                font-weight: 600;
+                            }
+                        }
+
+                        a{
+                            background-color: #fff;
+                            color: black;
+                            font-size: 12px;
+                            padding: 15px;
+                            border: 1px solid $default-border-color;
+                            font-weight: 600;
+                        
+                            &:hover{
+                                background-color: $first-main-color;
+                                color: #fff;
+                            }
+
+                            &.next,
+                            &.prev{
+
+                                padding: 14px 13px 13px;
+
+                                i{
+                                    margin-left: 0;
+                                    line-height: initial;
+                                    height: auto;
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}

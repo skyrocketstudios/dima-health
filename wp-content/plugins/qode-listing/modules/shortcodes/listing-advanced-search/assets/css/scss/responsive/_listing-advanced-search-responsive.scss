@@ -1,0 +1,151 @@
+/* ==========================================================================
+   Listing Advanced Search responsive style - begin
+   ========================================================================== */
+
+@include laptop-landscape-large {
+
+	.qode-ls-adv-search-holder {
+		.qode-ls-adv-search-items-holder{
+			$columns_number: ('four', 'five');
+
+			@for $i from 0 to length($columns_number) {
+				&.qode-ls-adr-#{nth($columns_number,$i+1)}-columns {
+					$item_size: 100% / 3;
+
+					article {
+						width: $item_size;
+					}
+
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(3n+1) {
+								clear: both;
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+	}
+}
+
+@include ipad-landscape {
+
+	.qode-ls-adv-search-holder {
+		&.qode-ls-adv-with-map {
+			.qode-ls-adv-search-map-holder{
+				.qode-ls-adv-search-keyword-holder{
+					.qode-ls-adv-search-keyword-holder-inner{
+						width: 70%;
+					}
+				}
+			}
+		}
+
+		.qode-ls-adv-search-items-holder{
+
+			$gallery_columns_number: ('three', 'four', 'five');
+
+			@for $i from 0 to length($gallery_columns_number) {
+				&.qode-ls-adr-#{nth($gallery_columns_number,$i+1)}-columns {
+
+					article {
+						width: 50%;
+					}
+
+					@media only screen and (min-width: $phone-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(2n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.qode-ls-adv-search-keyword-holder{
+			width: 100%;
+		}
+		.qode-ls-adv-search-fields-holder .qode-ls-adv-search-banner-holder .qode-ls-banner-text{
+			padding: 20px 10px;
+		}
+	}
+}
+
+@include ipad-portrait {
+
+	.qode-ls-adv-search-holder {
+		.qode-ls-adv-search-keyword-holder .qode-ls-adv-search-submit-button .qode-ls-adv-search-keyword-button{
+			padding: 10px 20px;
+		}
+
+		.qode-ls-adv-search-fields-holder{
+			width: 80%;
+			margin-bottom: 30px;
+		}
+
+		.qode-ls-adv-search-items-holder{
+			width: 100%;
+			padding: 0;
+		}
+	}
+}
+
+
+
+@include phone-landscape {
+
+	.qode-ls-adv-search-holder {
+		.qode-ls-adv-search-items-holder{
+
+			.qode-ls-adv-search-keyword-holder-inner{
+				width: 70%;
+			}
+
+			article {
+				width: 100% !important; // !important is set to override all other stronger selectors
+			}
+		}
+		.qode-ls-adv-search-fields-holder{
+			margin-left: 15px;
+		}
+
+		.qode-ls-adv-search-keyword-holder{
+			width: 80%;
+		}
+	}
+
+	.vc_row{
+		background-repeat: no-repeat;
+	}
+}
+
+@include phone-portrait{
+
+	.qode-ls-adv-search-holder{
+		.qode-ls-adv-search-keyword-holder {
+			.qode-ls-adv-search-keyword-field,
+			.qode-ls-adv-search-submit-button {
+				width: 100%;
+				margin-bottom: 0;
+			}
+			.qode-ls-adv-search-submit-button{
+				margin-bottom: 20px;
+			}
+		}
+
+		.qode-ls-adv-search-items-holder.qode-ls-adr-normal-space article{
+			margin-bottom: 20px;
+		}
+	}
+}
+/* ==========================================================================
+   Listing Advanced Search responsive style - end
+   ========================================================================== */

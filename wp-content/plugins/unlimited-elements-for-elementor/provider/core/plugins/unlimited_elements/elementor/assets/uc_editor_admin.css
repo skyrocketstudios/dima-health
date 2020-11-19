@@ -1,0 +1,87 @@
+@CHARSET "ISO-8859-1";
+
+.elementor-element-wrapper.uc-element{
+	xbox-size:border-box;
+	xborder:2px solid #ffffff;
+}
+
+.elementor-element-wrapper.uc-element .elementor-element{	
+	background-position:center center;
+	background-repear:no-repeat;
+	background-size:cover;
+}
+
+.elementor-element-wrapper.uc-element .icon{
+	opacity:0;
+}
+
+.elementor-element-wrapper.uc-element .elementor-element-title-wrapper{
+	height:40px;
+	position:relative;
+}
+
+.elementor-element-wrapper.uc-element .uc-title{
+	background-color:#ffffff;
+	font-size:11px;
+	xdisplay:none !important;
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+.uc-button-edit-html{
+	margin-top:5px;
+}
+
+.uc-elementor-control-disabled input[type='text']{
+	background-color:#f9f9f9;
+	color:#928D8C;
+}
+
+
+.___________SHAPE_CONTROL______________{}
+
+.elementor-control-input-wrapper .uc-button-choose-shape{
+	width:100%;
+	line-height:1.5;
+	border-radius:3px;
+	background-color:#a4afb7;
+    padding: 8px 12px;
+    cursor:pointer;
+    border-left: none;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    text-transform:uppercase;
+    margin-top:5px;
+}
+
+.elementor-control-input-wrapper .uc-button-choose-shape:hover{
+	
+	background-color:#6d7882;
+}
+
+.uc-shape-picker-dialog-container{
+	position:relative;
+}
+
+
+.___________SHAPES_DIALOG______________{}
+
+
+.uc-shapes-picker-dialog{
+	position:absolute;
+	width:284px;
+	height:200px;
+	background-color:yellow;
+	border:1px solid black;
+	z-index:999999;
+	top:0px;
+	left:-128px;
+}
+
+

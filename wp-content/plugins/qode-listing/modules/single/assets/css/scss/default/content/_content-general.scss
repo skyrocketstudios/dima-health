@@ -1,0 +1,28 @@
+.qode-listing-single-holder{
+	article{
+
+		.qode-ls-content-part-holder{
+            margin:52px 0 25px;
+		}
+		.qode-ls-content-part{
+
+			float: left;
+			box-sizing: border-box;
+			&.left{
+				width: 27%;
+
+				.qode-ls-content-part-title{
+					display: inline-block;
+                    max-width: 140px;
+				}
+			}
+			&.right{
+				width: 73%;
+
+
+
+			}
+		}
+
+	}
+}

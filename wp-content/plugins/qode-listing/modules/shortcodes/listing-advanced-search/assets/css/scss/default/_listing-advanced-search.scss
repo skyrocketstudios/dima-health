@@ -1,0 +1,336 @@
+.qode-ls-adv-search-holder{
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+
+
+	.qode-ls-adv-title-holder{
+		text-align: center;
+		padding: 35px 0 71px;
+
+		.qode-ls-adv-title{
+			margin-bottom: 12px;
+		}
+	}
+
+	.qode-ls-adv-search-keyword-holder{
+		position: relative;
+		width: 65%;
+		margin: 0 auto;
+
+		.qode-ls-adv-search-keyword-holder-inner{
+			background-color: #fff;
+			box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.15);
+			border: 1px solid $default-border-color;
+			border-radius: 4px;
+			padding: 17px 25px;
+			display: table;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		.qode-ls-adv-search-keyword-field{
+			width: 100%;
+			display: table-cell;
+			vertical-align: middle;
+			height: 54px;
+			box-sizing: border-box;
+			border-right: 1px solid $default-border-color;
+
+			.qode-ls-adv-search-keyword{
+				padding: 14px 13px 14px 13px;
+				font-size: 19px;
+				font-weight: 600;
+				color: #484848;
+				background: transparent;
+				border: none;
+				outline: none;
+				width: 100%;
+				box-sizing: border-box;
+
+				@include qodePlaceholder{
+					color: #484848;
+				}
+			}
+
+			.qode-ls-search-icon{
+				position: absolute;
+				padding: 20px;
+				color: $default-heading-color;
+				font-size: 23px;
+				border-right: 1px solid $default-border-color;
+			}
+		}
+
+		.qode-ls-adv-search-submit-button{
+			display: table-cell;
+			vertical-align: middle;
+			height: 54px;
+			padding-left: 25px;
+
+			.qode-ls-adv-search-keyword-button{
+				padding: 9px 0;
+				border: none;
+				outline: none;
+				background-color: transparent;
+				white-space: nowrap;
+
+				span {
+					display: inline-block;
+					vertical-align: middle;
+				}
+
+				.qode-btn-text {
+					font-size: 19px;
+					font-weight: 600;
+					color: #484848;
+				}
+				.qode-btn-icon {
+					width: 35px;
+					height: 35px;
+					line-height: 35px;
+					border-radius: 100%;
+					background-color: $first-main-color;
+					color: #fff;
+					margin-left: 35px;
+
+					i {
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+
+
+    &.qode-ls-adv-with-map{
+        .qode-ls-adv-search-map-holder{
+            position: relative;
+            margin-bottom: 45px;
+            
+            .qode-ls-adv-search-keyword-holder{
+                position: absolute;
+	            bottom: -45px;
+                width: 100%;
+
+                .qode-ls-adv-search-keyword-holder-inner{
+                    width: 50%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+
+	.qode-ls-adv-search-fields-holder{
+		float: left;
+		width: 22.5%;
+
+		.qode-ls-adv-search-banner-holder{
+
+			position: relative;
+			padding: 25px;
+			background-color: #fff;
+			border: 1px solid $default-border-color;
+			text-align: center;
+			margin-top: 45px;
+
+			.qode-ls-banner-image{
+				position: relative;
+				
+				img{
+					display: block;
+				}
+			}
+			.qode-ls-banner-title{
+				margin-top: 26px;
+			}
+			.qode-ls-banner-text{
+				font-size: 12px;
+				line-height: 18px;
+				font-weight: 500;
+				text-transform: uppercase;
+				margin-top: 17px;
+			}
+			.qode-listing-button{
+				margin-top: 24px;
+			}
+
+		}
+
+		.qode-ls-adv-search-fields-title{
+			margin: 0 0 12px;
+		}
+		.qode-ls-adv-search-field{
+			&:not(.checkbox){
+				margin-bottom: 14px;
+				label{
+					display: inline-block;
+					margin-bottom: 8px;
+				}
+			}
+		}
+		.qode-listing-field-holder-title{
+			margin: 15px 0 20px;
+			display: inline-block;
+
+		}
+
+		.qode-adv-search-submit{
+			margin-top: 20px;
+            
+		}
+
+	}
+	.qode-ls-adv-search-items-holder{
+		float: left;
+		width: 77.5%;
+		padding-right: 35px;
+		box-sizing: border-box;
+
+		.qode-ls-item{
+			@include qodeRelativeHolderLayout();
+			vertical-align: top;
+			box-sizing: border-box;
+
+			.qode-ls-item-image{
+				@include qodeRelativeHolderLayout();
+				a{
+					img{
+						vertical-align: middle;
+					}
+				}
+			}
+			.qode-listing-cat-wrapper{
+				& > a{
+					&:not(:last-child){
+						&:after {
+							content: ', ';
+							color: inherit;
+						}
+					}
+
+					color: $first-main-color;
+
+					&:hover {
+						color: #484848;
+					}
+
+				}
+
+				.qode-tax-name{
+					font-size: 12px;
+				}
+			}
+
+			.qode-listing-type-wrapper {
+
+				position: absolute;
+				top: 5px;
+				right: 5px;
+
+				a{
+					display: block;
+					background-color: #ff2d00;
+					font-size: 12px;
+					font-weight: 600;
+					letter-spacing: 0.2px;
+					padding: 0 8px;
+					color: #fff;
+					text-transform: uppercase;
+				}
+			}
+			.qode-ls-item-inner{
+				box-sizing: border-box;
+				padding: 19px 20px 25px;
+				background-color: #fff;
+				border: 1px solid #dbdbdb;
+
+
+				.qode-ls-item-footer{
+
+					padding-top: 20px;
+
+					.qode-ls-disc-price-amount {
+						font-size: 19px;
+						font-weight: 600;
+						padding-bottom: 2px;
+					}
+
+					.qode-ls-author-text,
+					.qode-listing-cat-wrapper {
+						font-size: 12px;
+						font-weight: 500;
+						text-transform: uppercase;
+						line-height: 1.4em;
+					}
+
+				}
+
+			}
+
+		}
+		/***** Listing Advanced Search Columns Space - begin *****/
+
+		.qode-ls-adv-load-more-holder{
+			text-align: center;
+		}
+
+		$columns_space_label: ('no', 'tiny', 'small', 'normal', 'big');
+		$columns_space: (0, 5, 10, 18, 35);
+
+		@for $i from 0 to length($columns_space_label) {
+			&.qode-ls-adr-#{nth($columns_space_label,$i+1)}-space {
+				$item_space: nth($columns_space, $i+1);
+				$item_bottom_margin: $item_space * 2;
+
+				.qode-ls-adr-inner {
+					margin: 0 -#{$item_space}px;
+				}
+
+				article {
+					padding: 0 #{$item_space}px;
+					margin: 0 0 #{$item_bottom_margin}px;
+				}
+			}
+		}
+		/***** Listing Advanced Search Columns Space - end *****/
+
+		/***** Listing Advanced Search Columns Width - begin *****/
+
+		$columns_number: ('two', 'three', 'four', 'five');
+
+		@for $i from 0 to length($columns_number) {
+			&.qode-ls-adr-#{nth($columns_number,$i+1)}-columns {
+
+				article {
+					width: 100% / ($i+2);
+				}
+
+				@if ($i > 1) { // set different break point for four and five columns
+					@media only screen and (min-width: $laptop-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				} @else {
+					@media only screen and (min-width: $ipad-landscape-plus-pixel) {
+
+						article {
+
+							&:nth-child(#{$i+2}n+1) {
+								clear: both;
+							}
+						}
+					}
+				}
+			}
+		}
+		/***** Listing Advanced Search Columns Width - end *****/
+	}
+
+}

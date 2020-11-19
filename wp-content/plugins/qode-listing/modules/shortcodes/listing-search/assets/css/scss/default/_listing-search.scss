@@ -1,0 +1,196 @@
+.qode-ls-main-search-holder{
+	display: table;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid $default-border-color;
+	box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 18px 20px 18px 5px;
+    
+	.qode-ls-main-search-holder-part{
+		display: table-cell;
+		vertical-align: middle;
+		box-sizing: border-box;
+		border-right: 1px solid #ececec;
+		padding-left: 51px;
+		width: 33%;
+		position: relative;
+
+        &:last-child{
+            border-right: none;
+        }
+
+		&.keyword{
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+        
+		&.price{
+			border-right:0;
+		}
+		&.submit{
+			width: 1%;
+		}
+		input{
+			margin: 0;
+			padding: 17px 0 17px 12px;
+			border-radius: 0;
+			border: 0;
+			width: 100%;
+			font-size: 16px;
+			font-family: inherit;
+			color: inherit;
+			outline:none;
+			box-sizing: border-box;
+
+			&:focus {
+				border: none;
+				outline: none;
+			}
+		}
+        
+        .qode-ls-slider-wrapper{
+            height: 52px;
+            background: $default-background-color;
+            
+            > span {
+                display: inline-block;
+                margin: 0 0 0 50px;
+                vertical-align: top;
+                min-width: 60px;
+                line-height: 52px;
+            }
+
+            .qode-price-slider-text{
+                color: $default-heading-color;
+            }
+            
+            .qode-price-slider-holder{
+                display: inline-block;
+                position: relative;
+                width: 140px;
+                height: 100%;
+                left: 10px;
+            }
+            
+            .qode-price-slider-response{
+                position: absolute;
+                background-color: $first-main-color;
+                border-radius: 2px;
+                bottom: 55px;
+                margin-left: -36px;
+                text-align: center;
+                color: $default-background-color;
+                width: 99px;
+                height: 37px;
+                line-height: 37px;
+                z-index: 5;
+                top: -30px;
+                font-size: 14px;
+
+                &:after{
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-top: 12px solid $first-main-color;
+                    left: 40px;
+                    bottom: -7px;
+                    position: absolute;
+                    z-index: 10;
+                    content: '';
+                }
+            }
+            
+            .rangeslider--horizontal{
+                width: 170px;
+                position: absolute;
+                height: 5px;
+                top: 50%;
+                transform: translateY(-50%);
+                box-shadow: none;
+
+                .rangeslider__fill{
+
+                    box-shadow: none;
+                }
+            }
+            
+            .rangeslider__handle{
+                width: 29px;
+                height: 29px;
+                box-shadow: none;
+                top: -14px;
+                
+                &:before{
+                    color: $default-background-color;
+                    content: ",";
+                    font-family: "ElegantIcons";
+                    left: 6px;
+                    position: relative;
+                    top: 2px;
+                }
+                &:after{
+                    background-image: none;
+                }
+            }
+            
+
+        }
+
+		.qode-ls-search-icon{
+			position: absolute;
+			left: 27px;
+			top: 50%;
+			@include qodeTransform(translateY(-50%));
+			font-size: 23px;
+			color: #d3d3d3;
+			z-index: 2;
+            margin-top: 2px;
+		}
+		.select2-container--default .select2-selection--single .select2-selection__rendered {
+			padding-left: 15px;
+		}
+		.select2-container{
+          width: 100% !important;
+			.select2-selection--single{
+				height: 52px;
+				line-height: 52px;
+				padding: 0;
+				font-size: 16px;
+				color: $default-heading-color;
+				border-radius: 0;
+				border: 0;
+                
+                .select2-arrow{
+                    right: 22px;
+                }
+              .select2-selection__clear{
+                display: none;
+              }
+
+
+			}
+		}
+	}
+	&.qode-dark-skin{
+		.qode-ls-main-search-holder-part{
+			input{
+				background-color: $default-heading-color;
+				color: $header-light-color;
+				@include qodePlaceholder {
+					color: $header-light-color;
+				}
+			}
+			.select2-container{
+				.select2-selection--single{
+					background-color: $default-heading-color;
+					color: $header-light-color;
+				}
+			}
+			.qode-ls-search-icon{
+				color: $header-light-color;
+			}
+		}
+
+	}
+}

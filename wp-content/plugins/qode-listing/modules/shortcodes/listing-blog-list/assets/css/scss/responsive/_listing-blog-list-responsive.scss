@@ -1,0 +1,19 @@
+/* ==========================================================================
+   Listing Blog List responsive style - begin
+   ========================================================================== */
+
+@include ipad-portrait {
+
+	.qode-ls-blog-list {
+		.qode-ls-blog-list-inner{
+
+			article {
+				width: 100% !important; // !important is set to override all other stronger selectors
+				border-right: none !important;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Listing Blog List responsive style - end
+   ========================================================================== */

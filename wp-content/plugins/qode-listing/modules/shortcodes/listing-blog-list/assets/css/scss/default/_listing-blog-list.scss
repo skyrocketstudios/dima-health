@@ -1,0 +1,106 @@
+.qode-ls-blog-list{
+
+	article {
+		float: left;
+		box-sizing: border-box;
+
+		.qode-ls-blog-list-image {
+
+			margin-bottom: 30px;
+
+			img {
+				vertical-align: middle;
+			}
+
+		}
+
+		.qode-ls-blog-list-date,
+		.qode-ls-blog-list-category,
+		.qode-ls-blog-list-read-more {
+			display: block;
+			font-size: 12px;
+			line-height: 18px;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		.qode-ls-blog-list-category {
+			a {
+				color: $first-main-color;
+			}
+		}
+		.qode-ls-blog-list-title {
+			padding: 20px 0 17px;
+		}
+
+		.qode-ls-blog-list-read-more {
+			margin-top: 24px;
+		}
+	}
+
+	/***** Listing List Columns Space - begin *****/
+
+	$columns_space_label: ('no', 'tiny', 'small', 'normal', 'big');
+	$columns_space: (0, 5, 10, 18, 38);
+
+	@for $i from 0 to length($columns_space_label) {
+		&.qode-ls-blog-list-#{nth($columns_space_label,$i+1)}-space {
+			$item_space: nth($columns_space, $i+1);
+			$item_bottom_margin: $item_space * 2;
+
+			.qode-ls-blog-list-inner {
+				margin: 0 -#{$item_space}px;
+			}
+
+			article {
+				padding: 0 #{$item_space}px;
+				margin: 0 0 #{$item_bottom_margin}px;
+			}
+		}
+	}
+	/***** Listing Testimonials Columns Space - end *****/
+
+	/***** Listing Testimonials Columns Width - begin *****/
+
+	$columns_number: ('two', 'three', 'four', 'five','six');
+
+	@for $i from 0 to length($columns_number) {
+		&.qode-ls-blog-list-#{nth($columns_number,$i+1)}-columns {
+
+			article {
+				width: 100% / ($i+2);
+				border-right: 1px dotted #484848;
+			}
+
+			@if ($i > 1) { // set different break point for four and five columns
+				@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+					article {
+
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+
+						&:nth-child(#{$i+2}n) {
+							border-right: none;
+						}
+					}
+				}
+			} @else {
+				@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+					article {
+
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+						&:nth-child(#{$i+2}n) {
+							border-right: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	/***** Listing Testimonials Columns Width - end *****/
+
+}

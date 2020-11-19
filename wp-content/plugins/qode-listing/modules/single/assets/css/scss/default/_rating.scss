@@ -1,0 +1,74 @@
+/* Blog Single Ratings start styles
+   ========================================================================== */
+
+.qode-ratings-holder {
+	margin: 35px 0 0;
+	clear: both;
+
+	.qode-ratings-text-title {
+		margin-bottom: 10px;
+	}
+
+	.qode-ratings-stars-holder {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		float: left;
+		margin: 8px 0;
+		line-height: 25px;
+		text-align: center;
+
+		.qode-ratings-stars-inner {
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			line-height: 1em;
+			width: 157px;
+
+			> span {
+				content: '\f005 \f005 \f005 \f005 \f005 ';
+				display: inline-block;
+				font-family: 'FontAwesome';
+				letter-spacing: 3px;
+				font-size: 10px;
+				overflow: hidden;
+				position: relative;
+				vertical-align: middle;
+				text-align: left;
+
+				&:before {
+					content: '\f005';
+				}
+
+				&.qode-active-rating-star,
+				&.qode-hover-rating-star {
+					color: $first-main-color;
+				}
+
+				&:last-child {
+					margin: 0;
+				}
+			}
+		}
+	}
+	.qode-ratings-message-holder {
+		display: inline-block;
+		margin: 8px 0;
+		float: left;
+
+		.qode-rating-message,
+		.qode-rating-value {
+			display: none;
+			float: left;
+			font-size: 14px;
+			line-height: 25px;
+		}
+
+		.qode-rating-value {
+			padding: 0 10px 0 20px;
+		}
+	}
+
+}
+/* Blog Single Ratings end styles
+   ========================================================================== */

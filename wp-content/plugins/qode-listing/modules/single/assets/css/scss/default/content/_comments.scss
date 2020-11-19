@@ -1,0 +1,237 @@
+/* Comment form rating - begin
+------------------------------------------*/
+
+.qode-ls-single-comments {
+    padding-top: 27px;
+	padding-bottom: 65px;
+
+	.qode-comment-holder-separator {
+		margin-bottom: 54px;
+
+		span {
+			display: block;
+			margin: 0 0 3px;
+			background-image: linear-gradient(to right, #484848 33%, rgba(255,255,255,0) 0%);
+			background-position: bottom;
+			background-size: 4px 2px;
+			background-repeat: repeat-x;
+			height: 1px;
+		}
+	}
+
+    .qode-comments-title-holder{
+
+	    position: relative;
+
+        i{
+	        vertical-align: text-top;
+            color: $first-main-color;
+            margin-right: 6px;
+        }
+        
+        .qode-comments-title{
+            display: inline-block;
+            margin-bottom: 52px;
+        }
+        
+        .select2-container{
+            width: 250px !important;
+            position: absolute;
+            right: 0;
+            top:-1%;
+        }
+    }
+
+	.qode-comments {
+
+		.qode-comment-list > li {
+			display: block;
+			margin-bottom: 48px;
+			padding-bottom: 50px;
+			border-bottom: 1px solid $default-border-color;
+
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+		}
+
+		.qode-review-rating {
+			@include qodeStarsStyle();
+			margin-left:7px;
+
+			&:before {
+				color: #c8c8c8;
+				content: '\f005\f005\f005\f005\f005';
+			}
+
+			.rating-inner {
+				position: absolute;
+				top: 0;
+				left: 0;
+				overflow: hidden;
+				color: $first-main-color;
+
+				&:before {
+					content: '\f005\f005\f005\f005\f005';
+				}
+			}
+		}
+        
+        .qode-comment-author{
+            float: left;
+	        width: 110px;
+            
+            .qode-comment-author-name{
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .qode-comment-image{
+            margin-bottom: 8px;
+
+	        img {
+		        vertical-align: middle;
+	        }
+        }
+        
+        .qode-comment-text{
+            margin-left: 145px;
+            
+            .qode-average-rating{
+                display: inline-block;
+				font-size: 12px;
+	            font-weight: 500;
+	            text-transform: uppercase;
+	            vertical-align: middle;
+            }
+
+            .qode-comment-date {
+	            font-size: 12px;
+	            font-weight: 500;
+	            text-transform: uppercase;
+	            margin-left: 11px;
+            }
+        }
+
+		.qode-review-title {
+			padding: 0;
+		}
+
+		.qode-text-holder {
+			margin-top: 10px;
+
+			p {
+				margin: 0;
+			}
+		}
+
+	}
+
+	.qode-comment-form {
+        
+		.comment-respond{
+			display: none;
+			padding-top: 30px;
+		}
+		.comment-reply-title {
+			display: none;
+		}
+
+		.qode-rating-form-title-holder {
+			@include qodeTableLayout;
+			margin-bottom: 8px;
+
+			.qode-rating-form-title,
+			.qode-comment-form-rating {
+				@include qodeTableCellLayout;
+			}
+
+			.qode-rating-form-title {
+				text-align: left;
+			}
+
+			.qode-comment-form-rating {
+				text-align: right;
+
+				label {
+					font-size: 15px;
+					color: $first-main-color;
+					display: inline-block;
+				}
+			}
+
+		}
+
+		.qode-comment-input-title {
+
+			input {
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+
+		}
+
+        #respond{
+            textarea {
+                border-top-left-radius: 0;
+                border-top-right-radius: 0;
+                resize: none;
+
+                & ~ input {
+                    width: 50%;
+                }
+            }
+            
+            .comment-respond{
+                .stars{
+                    a{
+                        &:before{
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+		&.logged-in {
+			#respond textarea {
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				border-bottom: 1px solid $default-border-color;
+			}
+		}
+
+		#email {
+			border-right: 1px solid $default-border-color !important;
+			border-bottom-right-radius: 5px;
+		}
+
+		.qode-listing-button {
+			width: 100%;
+			text-align: center;
+			box-sizing: border-box !important;
+		}
+	}
+}
+
+.qode-comment-rating-box {
+	display: inline-block;
+	float: right;
+	margin-left: 18px;
+
+	.qode-star-rating {
+		@include qodeStarsStyle();
+		@include qodeTransition(all 0.3s ease);
+		color: #c8c8c8;
+
+		&.active {
+			color: $first-main-color;
+		}
+
+		&:before {
+			content: '\f005';
+            cursor: pointer;
+		}
+	}
+}

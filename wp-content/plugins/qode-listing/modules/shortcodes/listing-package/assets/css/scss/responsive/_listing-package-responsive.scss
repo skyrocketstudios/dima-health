@@ -1,0 +1,14 @@
+/* ==========================================================================
+   Listing Package responsive style - begin
+   ========================================================================== */
+@include ipad-landscape{
+
+	.qode_pricing_tables .q_price_table.qode_pricing_table_advanced,
+	.qode_pricing_tables.four_columns .q_price_table.qode_pricing_table_advanced,
+	.qode_pricing_tables.three_columns .q_price_table.qode_pricing_table_advanced {
+		margin-bottom: 80px;
+	}
+}
+/* ==========================================================================
+   Listing Package responsive style - end
+   ========================================================================== */

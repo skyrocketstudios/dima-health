@@ -1,0 +1,21 @@
+# #  Don't track content of these folders
+# dec.28.2019_backup_old/
+# wp-content/uploads/
+# wp-content/themes/twentytwenty/
+# wp-content/themes/twentynineteen/
+# wp-content/themes/twentyseventeen/
+# wp-content/themes/twentysixteen/
+
+# # # File extensions #
+# *.htaccess
+
+
+
+wp-config.php
+wp-content/uploads/elementor/css/post-117.css
+wp-content/uploads/*
+# wp-content/uploads/wc-logs/fatal-errors-2020-01-10-ab132459c798a247233792c1a22ea1cd.log~ralph
+
+
+# wp-content/uploads/wc-logs/fatal-errors-2020-01-10-ab132459c798a247233792c1a22ea1cd.log~ralph
+

@@ -1,0 +1,102 @@
+.page-template-user-dashboard{
+    .qode-user-package-holder{
+        list-style: none outside none;
+        margin: 35px 0 0 0;
+
+        .qode-user-package{
+
+            box-sizing: border-box;
+            margin-bottom: 30px;
+            @include qodeTableLayout();
+
+
+            .qode-ls-package-part{
+                @include qodeTableCellLayout();
+            }
+
+            &>div{
+                &:not(.qode-user-package-title){
+                    .qode-ls-package-text{
+                        font-size: 16px;
+                        padding-top: 12px;
+                        padding-bottom: 12px; 
+                    }
+                }
+            }
+
+            .qode-user-package-title{
+                .qode-ls-package-value{
+                    border-left: 1px solid $default-border-color;
+                }
+            }
+
+            .qode-user-package-price{
+                .qode-ls-package-value{
+                    border-right: 1px solid $default-border-color;
+                }
+            }
+
+            .qode-ls-package-text{
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 19px;
+                color: #ffffff;
+                font-weight: 600;
+                background-color: $first-main-color;
+                border-bottom: 1px solid $default-border-color;
+            }
+
+
+
+            .qode-ls-package-value {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid $default-border-color;
+                font-size: 16px;
+                color: inherit;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+.woocommerce-account{ 
+    table{
+        &.shop_table{
+            &.my_account_job_packages{
+                width: 100%;
+                text-align: center;
+
+                thead{
+
+                    tr{
+                        border: 1px solid $first-main-color;
+                    }
+
+                    th{
+                        color: #fff;
+                        background-color: $first-main-color;
+                        border-color: $first-main-color;
+                    }
+                }
+                
+                tr{
+                    border: 1px solid $default-border-color;
+
+                    td{
+                        color: inherit;
+                    }
+                }
+
+                th,
+                td{
+                    text-align: center;
+                    font-weight: 600;
+                }
+
+
+            }
+        }
+    }
+}

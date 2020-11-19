@@ -1,0 +1,50 @@
+.qode-listing-single-holder{
+	article{
+		.qode-ls-single-social-network-holder{
+			margin-top: 20px;
+			.qode-ls-single-social-net-title{
+				text-transform: uppercase;
+			}
+			.qode-ls-social-icon{
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				float: left;
+				text-align: center;
+				color: $default-background-color;
+				background-color: $grey-color;
+				border-radius: 2px;
+				margin-bottom: 3px;
+
+				&:not(:last-child){
+					margin-right: 3px;
+				}
+
+				&.twitter{
+					background-color: #19b5ee;
+				}
+				&.facebook{
+					 background-color: #3b5a9a;
+				}
+				&.instagram{
+					background-color: #504235;
+				}
+				&.pinterest{
+					background-color: #d1202a;
+				}
+				&.soundcloud{
+					background-color: #f45100;
+				}
+				&.vimeo{
+					background-color: #3caef2;
+				}
+				&.youtube{
+					background-color: #e4150b;
+				}
+				&.skype{
+					background-color: #3daff5;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,238 @@
+/* ==========================================================================
+    Listing map - start
+========================================================================== */
+#qode-ls-multiple-map-holder,
+#qode-ls-single-map-holder {
+	height: 500px;
+}
+
+.qode-map-marker-holder {
+	@include qodeTransform(translate(-50%, -100%));
+	z-index: 10;
+
+	.qode-map-marker {
+		width: 37px;
+		height: 37px;
+		position: relative;
+		@include qodeTransition(all 0.15s ease-out);
+
+		.qode-map-marker-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background-color: #484848;
+			color: #fff;
+			display: inline-block;
+			border-radius: 58px 50px 58px 0;
+			border: 5px solid #484848;
+			@include qodeTransform(rotate(-45deg));
+
+			> i,
+			> span {
+				position: absolute;
+				top: 3px;
+				left: 0;
+				right: 0;
+				width: 100%;
+				height: 100%;
+				line-height: 37px;
+				font-size: 18px;
+				text-align: center;
+				@include qodeTransition(all 0.1s ease-out);
+
+			}
+
+			.qode-map-marker-botom{
+				position: absolute;
+				bottom: 0;
+			}
+			svg {
+				width: 100%;
+				height: auto;
+				display: none;
+
+				path {
+					fill: $first-main-color;
+				}
+			}
+		}
+
+
+		&:hover {
+
+			@include qodeTransition(all 0.2s ease-out);
+
+			&>:before{
+				border-top-color: $first-main-color ;
+			}
+			.qode-map-marker-inner {
+				background-color: $first-main-color;
+				border-color: $first-main-color;
+			}
+
+		}
+
+	}
+
+	&.active {
+		.qode-map-marker {
+			@include qodeTransition(all 0.2s ease-out);
+
+			&>:before{
+				border-top-color: $first-main-color;
+			}
+
+			.qode-map-marker-inner {
+				background-color: $first-main-color;
+				border-color: $first-main-color;
+			}
+		}
+	}
+
+	.qode-info-window {
+		background-color: #fff;
+		text-align: center;
+		min-width: 338px;
+		display: none;
+		position: absolute;
+		top: -9px;
+		z-index: 10;
+		left: 50%;
+		border-radius: 2px;
+		@include qodeTransform(translate(-85%, -100%));
+		@include qodeTransition(opacity 0.3s ease);
+		box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.15);
+	}
+
+	.qode-info-window-inner {
+		@include qodeTableLayout();
+
+		> a {
+			position: absolute;
+			top:0;
+			left:0;
+			height: 100%;
+			width: 100%;
+			z-index: 100;
+			&:hover {
+				~ .qode-info-window-image img {
+					opacity: 0.85;
+					@include qodeTransition(all .8s cubic-bezier(0.28, 0.75, 0.25, 1));
+				}
+				~ .qode-info-window-details h5 {
+					color:$first-main-color;
+					@include qodeTransition(color .5s cubic-bezier(0.28, 0.75, 0.25, 1));
+				}
+			}
+		}
+
+		.qode-info-window-details {
+			@include qodeTableCellLayout();
+			width: 70%;
+			text-align: left;
+			padding: 0 21px;
+
+			h5 {
+				margin: 5px 0;
+				@include qodeTransition(color .25s ease);
+			}
+
+			p {
+				font-size: 13px;
+				line-height: 1.8em;
+				margin: 0;
+			}
+
+		}
+
+		.qode-info-window-image {
+			@include qodeTableCellLayout();
+			width: 30%;
+			padding: 8px;
+			border-left: 1px solid $default-border-color;
+
+			img {
+				display: block;
+				width: 100%;
+				height: auto;
+				image-rendering: optimizeQuality;
+				@include qodeTransition(opacity .4s ease);
+				-webkit-backface-visibility:hidden;
+			}
+
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			width: 0;
+			height: 0;
+			border-left: 13px solid transparent;
+			border-right: 13px solid transparent;
+			border-top: 12px solid #fff;
+			@include qodeTransform(translateY(100%));
+			right: 11%;
+			margin: 0 auto;
+		}
+
+	}
+
+	&.active {
+		z-index: 500;
+
+		.qode-info-window {
+			//opacity: 1;
+		}
+
+	}
+
+}
+
+.qode-cluster-marker {
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+
+	.qode-cluster-marker-inner {
+		position: relative;
+
+		.qode-cluster-marker-number {
+			position: absolute;
+			top: -2px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			text-align: center;
+			font-size: 20px;
+			font-weight: 400;
+			color: $light-color;
+			border-radius: 1px;
+			@include qodeTransition(all 0.3s ease);
+		}
+	}
+
+	svg {
+		width: 100%;
+		height: auto;
+
+		path {
+			fill: $first-main-color;
+		}
+	}
+
+	&:hover {
+
+		svg {
+
+			path {
+				fill: $first-main-color;
+			}
+		}
+
+	}
+
+}
+/* ==========================================================================
+    Listing map - end
+========================================================================== */

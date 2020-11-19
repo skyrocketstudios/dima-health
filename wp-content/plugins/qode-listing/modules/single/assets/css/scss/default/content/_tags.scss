@@ -1,0 +1,15 @@
+.qode-listing-single-holder{
+	article{
+		.qode-ls-tags-wrapper{
+			a{
+				display: inline-block;
+				font-size: 12px;
+				font-weight: 500;
+				text-transform: uppercase;
+				padding: 10px 25px;
+				margin: 0 5px 5px 0;
+				border: 1px solid $default-border-color;
+			}
+		}
+	}
+}

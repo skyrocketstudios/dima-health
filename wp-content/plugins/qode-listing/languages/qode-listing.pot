@@ -1,0 +1,1497 @@
+# Copyright (C) 2019 Qode Themes
+# This file is distributed under the same license as the Qode Listing plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Qode Listing 2.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/qode-listing\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-04-04T12:59:20+02:00\n"
+"PO-Revision-Date: 2019-04-04T12:59:20+02:00\n"
+"X-Generator: WP-CLI 2.0.1\n"
+"X-Domain: qode-listing\n"
+
+#. Plugin Name of the plugin
+msgid "Qode Listing"
+msgstr ""
+
+#. Description of the plugin
+msgid "Plugin that extends wp_job_manager functionality"
+msgstr ""
+
+#. Author of the plugin
+msgid "Qode Themes"
+msgstr ""
+
+#: \admin\meta-box\map.php:21
+msgid "Price"
+msgstr ""
+
+#: \admin\meta-box\map.php:23
+#: \admin\meta-box\map.php:34
+msgid "e.q 7000"
+msgstr ""
+
+#: \admin\meta-box\map.php:32
+#: \modules\dashboard\templates\package.php:95
+msgid "Discount Price"
+msgstr ""
+
+#: \admin\meta-box\map.php:44
+msgid "Gallery"
+msgstr ""
+
+#: \admin\meta-box\map.php:46
+msgid "Image"
+msgstr ""
+
+#: \admin\meta-box\map.php:55
+msgid "Phone"
+msgstr ""
+
+#: \admin\meta-box\map.php:57
+msgid "Enter phone number"
+msgstr ""
+
+#: \admin\meta-box\map.php:66
+msgid "E-mail"
+msgstr ""
+
+#: \admin\meta-box\map.php:68
+msgid "Enter e-mail"
+msgstr ""
+
+#: \admin\meta-box\map.php:77
+msgid "Self Hosted Video"
+msgstr ""
+
+#: \admin\meta-box\map.php:79
+#: \admin\meta-box\map.php:90
+msgid "Enter Video Url"
+msgstr ""
+
+#: \admin\meta-box\map.php:80
+msgid "Note that if Youtube or Vimeo field is set, this video will not be shown"
+msgstr ""
+
+#: \admin\meta-box\map.php:88
+msgid "Video Url"
+msgstr ""
+
+#: \admin\meta-box\map.php:91
+msgid "Youtube or Vimeo Video Url"
+msgstr ""
+
+#: \admin\meta-box\map.php:99
+msgid "Video Text"
+msgstr ""
+
+#: \admin\meta-box\map.php:101
+msgid "Enter Video Text"
+msgstr ""
+
+#: \admin\meta-box\map.php:128
+msgid "Listing Meta Box"
+msgstr ""
+
+#: \admin\meta-box\map.php:136
+msgid "General Settings"
+msgstr ""
+
+#: \admin\meta-box\map.php:149
+#: \helpers\helper-functions.php:220
+#: \helpers\helper-functions.php:248
+#: \modules\shortcodes\listing-list\listing-list.php:121
+#: \modules\shortcodes\listing-list\listing-list.php:154
+#: \modules\shortcodes\listing-search\listing-search.php:123
+msgid "Default"
+msgstr ""
+
+#: \admin\meta-box\map.php:150
+#: \helpers\helper-functions.php:224
+#: \helpers\helper-functions.php:228
+msgid "Yes"
+msgstr ""
+
+#: \admin\meta-box\map.php:151
+#: \helpers\helper-functions.php:225
+#: \helpers\helper-functions.php:227
+msgid "No"
+msgstr ""
+
+#: \admin\meta-box\map.php:218
+#: \admin\meta-box\map.php:261
+#: \admin\meta-box\map.php:294
+#: \admin\meta-box\map.php:337
+#: \lib\front-end-field-creator.php:35
+#: \modules\archive\templates\filter.php:40
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:111
+#: \modules\shortcodes\listing-categories\listing-categories.php:113
+#: \modules\shortcodes\listing-list\listing-list.php:131
+#: \modules\shortcodes\listing-slider\listing-slider.php:119
+msgid "Listing Type"
+msgstr ""
+
+#: \admin\meta-box\map.php:219
+msgid "Choose a default type for Single Listings"
+msgstr ""
+
+#: \admin\meta-box\map.php:261
+#: \lib\front-end-field-creator.php:90
+msgid "Categories"
+msgstr ""
+
+#: \admin\meta-box\map.php:270
+msgid "Choose Categories"
+msgstr ""
+
+#: \admin\meta-box\map.php:294
+#: \lib\front-end-field-creator.php:107
+msgid "Custom Fields"
+msgstr ""
+
+#: \admin\meta-box\map.php:337
+#: \helpers\taxonomy-meta-fields.php:578
+msgid "Amenities"
+msgstr ""
+
+#: \admin\options-map\map.php:9
+#: \lib\listing-global-settings.php:241
+msgid "Listing"
+msgstr ""
+
+#: \admin\options-map\map.php:14
+msgid "General"
+msgstr ""
+
+#: \admin\options-map\map.php:25
+msgid "Enable WooCommerce currency for Listings"
+msgstr ""
+
+#: \admin\options-map\map.php:26
+msgid "Enable this option if you want to use WooCommerce currency set in WooCommerce -> Settings -> Currency as currency for Listings"
+msgstr ""
+
+#: \admin\options-map\map.php:31
+msgid "Archive"
+msgstr ""
+
+#: \admin\options-map\map.php:42
+msgid "Number of listings per page"
+msgstr ""
+
+#: \admin\options-map\map.php:54
+msgid "Load More on Archive Pages"
+msgstr ""
+
+#: \admin\options-map\map.php:60
+msgid "Single"
+msgstr ""
+
+#: \admin\options-map\map.php:71
+msgid "Listing Single Slug"
+msgstr ""
+
+#: \admin\options-map\map.php:72
+msgid "Enter if you wish to use a different Single Listing slug (Note: After entering slug, navigate to Settings -> Permalinks and click \"Save\" in order for changes to take effect)"
+msgstr ""
+
+#: \admin\options-map\map.php:85
+msgid "Enable content bottom area"
+msgstr ""
+
+#: \admin\options-map\map.php:103
+msgid "Maps Style"
+msgstr ""
+
+#: \admin\options-map\map.php:104
+msgid "Insert map style json"
+msgstr ""
+
+#: \admin\options-map\map.php:114
+msgid "Scrollable Maps"
+msgstr ""
+
+#: \admin\options-map\map.php:125
+msgid "Draggable Maps"
+msgstr ""
+
+#: \admin\options-map\map.php:136
+msgid "Maps Street View Controls"
+msgstr ""
+
+#: \admin\options-map\map.php:147
+msgid "Maps Zoom Control"
+msgstr ""
+
+#: \admin\options-map\map.php:158
+msgid "Maps Type Control"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:213
+msgid "Please insert valid name"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:220
+msgid "Please insert valid email"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:227
+msgid "Please insert valid phone"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:253
+msgid "From"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:254
+msgid "Message"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:255
+msgid "Message sent via enquiry form on"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:259
+msgid "New Enquiry form blog name"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:264
+msgid "Enquiry sent successfully"
+msgstr ""
+
+#: \helpers\listing-ajax-helper-functions.php:273
+msgid "Please review your enquiry and send again"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:878
+msgid "Facebook"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:879
+msgid "Twitter"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:880
+msgid "Instagram"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:881
+msgid "Pinterest"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:882
+msgid "Sound Cloud"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:883
+msgid "Vimeo"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:884
+msgid "Youtube"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:885
+msgid "Skype"
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:892
+msgid "Enter "
+msgstr ""
+
+#: \helpers\listing-helper-functions.php:892
+msgid " Profile Url"
+msgstr ""
+
+#: \helpers\listing-review-functions.php:22
+msgid "Write a Review"
+msgstr ""
+
+#: \helpers\listing-review-functions.php:25
+msgid "Rate Here"
+msgstr ""
+
+#: \helpers\listing-review-functions.php:35
+msgid "Title of your Review"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:15
+#: \helpers\taxonomy-meta-fields.php:304
+msgid "Icon"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:31
+#: \helpers\taxonomy-meta-fields.php:325
+msgid "Icon Pack"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:75
+#: \helpers\taxonomy-meta-fields.php:374
+msgid "Choose Listing Type ( only for top parent categories )"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:97
+#: \helpers\taxonomy-meta-fields.php:400
+msgid "Square Small"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:98
+#: \helpers\taxonomy-meta-fields.php:401
+msgid "Square Big"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:99
+#: \helpers\taxonomy-meta-fields.php:402
+msgid "Rectangle Portrait"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:100
+#: \helpers\taxonomy-meta-fields.php:403
+msgid "Rectangle Landscape"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:103
+#: \helpers\taxonomy-meta-fields.php:406
+msgid "Standard"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:104
+#: \helpers\taxonomy-meta-fields.php:407
+msgid "Simple"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:111
+#: \helpers\taxonomy-meta-fields.php:272
+#: \helpers\taxonomy-meta-fields.php:764
+#: \helpers\taxonomy-meta-fields.php:835
+msgid "Featured Image"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:122
+#: \helpers\taxonomy-meta-fields.php:123
+#: \helpers\taxonomy-meta-fields.php:282
+#: \helpers\taxonomy-meta-fields.php:283
+#: \helpers\taxonomy-meta-fields.php:775
+#: \helpers\taxonomy-meta-fields.php:776
+#: \helpers\taxonomy-meta-fields.php:845
+#: \helpers\taxonomy-meta-fields.php:846
+msgid "Select Image"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:124
+#: \helpers\taxonomy-meta-fields.php:285
+#: \helpers\taxonomy-meta-fields.php:777
+#: \helpers\taxonomy-meta-fields.php:848
+msgid "Upload"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:128
+#: \helpers\taxonomy-meta-fields.php:290
+#: \helpers\taxonomy-meta-fields.php:781
+#: \helpers\taxonomy-meta-fields.php:853
+#: \lib\listing-repeater-field-functions.php:104
+msgid "Remove"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:141
+msgid "Choose Gallery Size ( only for top listing categories shortcode )"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:158
+msgid "Choose Gallery Type ( only for top listing categories shortcode )"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:174
+#: \helpers\taxonomy-meta-fields.php:455
+msgid "Set Category Custom Link(only if Simple Gallery Type is set)"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:412
+msgid "Choose Listing Size ( only for listing categories shortcode )"
+msgstr ""
+
+#: \helpers\taxonomy-meta-fields.php:434
+msgid "Choose Listing Type ( only for listing categories shortcode )"
+msgstr ""
+
+#: \lib\custom-field-creator.php:9
+msgid "Custom Field Creator"
+msgstr ""
+
+#: \lib\custom-field-creator.php:15
+msgid "Text"
+msgstr ""
+
+#: \lib\custom-field-creator.php:18
+msgid "Textarea"
+msgstr ""
+
+#: \lib\custom-field-creator.php:21
+msgid "Select"
+msgstr ""
+
+#: \lib\custom-field-creator.php:24
+msgid "Checkbox"
+msgstr ""
+
+#: \lib\custom-field-creator.php:50
+#: \lib\custom-field-creator.php:56
+msgid "Text field"
+msgstr ""
+
+#: \lib\custom-field-creator.php:60
+#: \lib\custom-field-creator.php:124
+#: \lib\custom-field-creator.php:222
+#: \lib\custom-field-creator.php:277
+#: \modules\dashboard\templates\package.php:21
+#: \modules\shortcodes\listing-banner\listing-banner.php:116
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:123
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:121
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:332
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:360
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:123
+msgid "Title"
+msgstr ""
+
+#: \lib\custom-field-creator.php:70
+#: \lib\custom-field-creator.php:232
+msgid "Default value"
+msgstr ""
+
+#: \lib\custom-field-creator.php:112
+msgid "Select field"
+msgstr ""
+
+#: \lib\custom-field-creator.php:131
+msgid "Options"
+msgstr ""
+
+#: \lib\custom-field-creator.php:179
+msgid "Label(*)"
+msgstr ""
+
+#: \lib\custom-field-creator.php:211
+msgid "Textarea field"
+msgstr ""
+
+#: \lib\custom-field-creator.php:268
+msgid "Checkbox field"
+msgstr ""
+
+#: \lib\front-end-field-creator.php:148
+msgid "Filter by Amenities"
+msgstr ""
+
+#: \lib\front-end-field-creator.php:199
+#: \modules\archive\templates\filter.php:8
+msgid "Filter Results"
+msgstr ""
+
+#: \lib\front-end-field-creator.php:361
+#: \lib\front-end-field-creator.php:458
+#: \lib\front-end-field-creator.php:538
+#: \modules\job_manager\templates\account-signin.php:43
+#: \modules\job_manager\templates\account-signin.php:50
+#: \modules\job_manager\templates\job-submit.php:42
+msgid "(optional)"
+msgstr ""
+
+#: \lib\listing-core-classes.php:611
+#: \modules\maps\map-functions.php:240
+msgid "In "
+msgstr ""
+
+#: \lib\listing-global-settings.php:84
+msgid "Submit Listing"
+msgstr ""
+
+#: \lib\listing-global-settings.php:127
+#: \lib\listing-global-settings.php:150
+#: \lib\listing-global-settings.php:172
+msgid "Hi "
+msgstr ""
+
+#: \lib\listing-global-settings.php:127
+#: \lib\listing-global-settings.php:150
+msgid "Your listing "
+msgstr ""
+
+#: \lib\listing-global-settings.php:127
+#: \lib\listing-global-settings.php:172
+msgid "has just been approved at "
+msgstr ""
+
+#: \lib\listing-global-settings.php:129
+msgid "Your listing is online"
+msgstr ""
+
+#: \lib\listing-global-settings.php:150
+msgid "has now expired: "
+msgstr ""
+
+#: \lib\listing-global-settings.php:153
+#: \lib\listing-global-settings.php:175
+msgid "Your listing has expired"
+msgstr ""
+
+#: \lib\listing-global-settings.php:172
+msgid "Your resume "
+msgstr ""
+
+#: \lib\listing-global-settings.php:242
+#: \lib\listing-global-settings.php:247
+msgid "Listings"
+msgstr ""
+
+#: \lib\listing-global-settings.php:248
+#: \lib\listing-global-settings.php:299
+#: \lib\listing-global-settings.php:328
+msgid "All %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:249
+msgid "Add New"
+msgstr ""
+
+#: \lib\listing-global-settings.php:250
+msgid "Add %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:251
+msgid "Edit"
+msgstr ""
+
+#: \lib\listing-global-settings.php:252
+#: \lib\listing-global-settings.php:302
+#: \lib\listing-global-settings.php:331
+msgid "Edit %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:253
+msgid "New %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:254
+#: \lib\listing-global-settings.php:255
+msgid "View %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:256
+#: \lib\listing-global-settings.php:298
+#: \lib\listing-global-settings.php:327
+msgid "Search %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:257
+msgid "No %s found"
+msgstr ""
+
+#: \lib\listing-global-settings.php:258
+msgid "No %s found in trash"
+msgstr ""
+
+#: \lib\listing-global-settings.php:259
+#: \lib\listing-global-settings.php:300
+#: \lib\listing-global-settings.php:329
+msgid "Parent %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:260
+msgid "Featured image"
+msgstr ""
+
+#: \lib\listing-global-settings.php:261
+msgid "Set featured image"
+msgstr ""
+
+#: \lib\listing-global-settings.php:262
+msgid "Remove featured image"
+msgstr ""
+
+#: \lib\listing-global-settings.php:263
+msgid "Use as featured image"
+msgstr ""
+
+#: \lib\listing-global-settings.php:290
+msgid "Listing type"
+msgstr ""
+
+#: \lib\listing-global-settings.php:291
+msgid "Listing types"
+msgstr ""
+
+#: \lib\listing-global-settings.php:301
+#: \lib\listing-global-settings.php:330
+msgid "Parent %s:"
+msgstr ""
+
+#: \lib\listing-global-settings.php:303
+#: \lib\listing-global-settings.php:332
+msgid "Update %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:304
+#: \lib\listing-global-settings.php:333
+msgid "Add New %s"
+msgstr ""
+
+#: \lib\listing-global-settings.php:305
+#: \lib\listing-global-settings.php:334
+msgid "New %s Name"
+msgstr ""
+
+#: \lib\listing-global-settings.php:319
+msgid "Listing category"
+msgstr ""
+
+#: \lib\listing-global-settings.php:320
+msgid "Listing categories"
+msgstr ""
+
+#: \lib\listing-global-settings.php:354
+#: \lib\listing-global-settings.php:371
+msgid "Listing Tags"
+msgstr ""
+
+#: \lib\listing-global-settings.php:355
+#: \lib\listing-global-settings.php:372
+msgid "Listing Tag"
+msgstr ""
+
+#: \lib\listing-global-settings.php:356
+msgid "Search Listing Tags"
+msgstr ""
+
+#: \lib\listing-global-settings.php:357
+msgid "Popular Tags"
+msgstr ""
+
+#: \lib\listing-global-settings.php:358
+msgid "All Listing Tags"
+msgstr ""
+
+#: \lib\listing-global-settings.php:359
+msgid "Parent Listing Tag"
+msgstr ""
+
+#: \lib\listing-global-settings.php:360
+msgid "Parent Listing Tag:"
+msgstr ""
+
+#: \lib\listing-global-settings.php:361
+msgid "Edit Listing Tag"
+msgstr ""
+
+#: \lib\listing-global-settings.php:362
+msgid "View Tag"
+msgstr ""
+
+#: \lib\listing-global-settings.php:363
+msgid "Update Listing Tag"
+msgstr ""
+
+#: \lib\listing-global-settings.php:364
+msgid "Add New Listing Tag"
+msgstr ""
+
+#: \lib\listing-global-settings.php:365
+msgid "New Listing Tag Name"
+msgstr ""
+
+#: \lib\listing-global-settings.php:366
+msgid "Separate tags with commas"
+msgstr ""
+
+#: \lib\listing-global-settings.php:367
+msgid "Add or remove tags"
+msgstr ""
+
+#: \lib\listing-global-settings.php:368
+msgid "Choose from the most used tags"
+msgstr ""
+
+#: \lib\listing-global-settings.php:369
+msgid "No tags found."
+msgstr ""
+
+#: \lib\listing-global-settings.php:370
+msgid "No tags"
+msgstr ""
+
+#: \lib\listing-global-settings.php:375
+msgctxt "permalink"
+msgid "listing-tag"
+msgstr ""
+
+#: \lib\listing-global-settings.php:403
+#: \lib\listing-global-settings.php:420
+#: \lib\listing-global-settings.php:422
+#: \modules\shortcodes\listing-regions\listing-regions.php:104
+msgid "Listing Regions"
+msgstr ""
+
+#: \lib\listing-global-settings.php:404
+#: \lib\listing-global-settings.php:421
+msgid "Listing Region"
+msgstr ""
+
+#: \lib\listing-global-settings.php:405
+msgid "Search Listing Regions"
+msgstr ""
+
+#: \lib\listing-global-settings.php:406
+msgid "Popular Listing Regions"
+msgstr ""
+
+#: \lib\listing-global-settings.php:407
+msgid "All Listing Regions"
+msgstr ""
+
+#: \lib\listing-global-settings.php:408
+msgid "Parent Listing Region"
+msgstr ""
+
+#: \lib\listing-global-settings.php:409
+msgid "Parent Listing Region:"
+msgstr ""
+
+#: \lib\listing-global-settings.php:410
+msgid "Edit Listing Region"
+msgstr ""
+
+#: \lib\listing-global-settings.php:411
+msgid "View Listing Region"
+msgstr ""
+
+#: \lib\listing-global-settings.php:412
+msgid "Update Listing Region"
+msgstr ""
+
+#: \lib\listing-global-settings.php:413
+msgid "Add New Listing Region"
+msgstr ""
+
+#: \lib\listing-global-settings.php:414
+msgid "New Listing Region Name"
+msgstr ""
+
+#: \lib\listing-global-settings.php:415
+msgid "Separate regions with commas"
+msgstr ""
+
+#: \lib\listing-global-settings.php:416
+msgid "Add or remove regions"
+msgstr ""
+
+#: \lib\listing-global-settings.php:417
+msgid "Choose from the most used regions"
+msgstr ""
+
+#: \lib\listing-global-settings.php:418
+msgid "No regions found."
+msgstr ""
+
+#: \lib\listing-global-settings.php:419
+msgid "No regions"
+msgstr ""
+
+#: \lib\listing-global-settings.php:425
+msgctxt "permalink"
+msgid "listing-region"
+msgstr ""
+
+#: \lib\listing-repeater-field-functions.php:89
+msgid "Add new"
+msgstr ""
+
+#: \lib\listing-repeater-field-functions.php:144
+msgid "Add Amenity"
+msgstr ""
+
+#: \lib\listing-repeater-field-functions.php:158
+msgid "Delete Amenity"
+msgstr ""
+
+#: \modules\archive\templates\filter.php:31
+msgid "Enter Keyword"
+msgstr ""
+
+#: \modules\archive\templates\filter.php:44
+#: \modules\shortcodes\listing-search\templates\holder.php:40
+msgid "All Types"
+msgstr ""
+
+#: \modules\archive\templates\filter.php:64
+#: \modules\archive\templates\filter.php:75
+msgid "Enter Address"
+msgstr ""
+
+#: \modules\archive\templates\filter.php:86
+msgid "Choose km radius: "
+msgstr ""
+
+#: \modules\archive\templates\filter.php:93
+msgid "0km"
+msgstr ""
+
+#: \modules\archive\templates\filter.php:96
+msgid "100km"
+msgstr ""
+
+#: \modules\archive\templates\load-more-template.php:8
+#: \modules\shortcodes\listing-advanced-search\templates\load-more-template.php:7
+#: \modules\shortcodes\listing-list\templates\load-more-template.php:7
+msgid "Load More"
+msgstr ""
+
+#: \modules\archive\templates\post-not-found.php:2
+#: \modules\shortcodes\listing-advanced-search\templates\post-not-found.php:2
+#: \modules\shortcodes\listing-categories\templates\post-not-found.php:2
+#: \modules\shortcodes\listing-list\templates\post-not-found.php:2
+#: \modules\shortcodes\listing-regions\templates\post-not-found.php:2
+#: \modules\shortcodes\listing-slider\templates\post-not-found.php:2
+#: \modules\shortcodes\listing-testimonials\templates\post-not-found.php:2
+#: \modules\single\templates\related-posts\no-post-found.php:2
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: \modules\archive\templates\single.php:41
+#: \modules\shortcodes\listing-advanced-search\templates\item.php:49
+#: \modules\shortcodes\listing-list\templates\item.php:49
+#: \modules\shortcodes\listing-slider\templates\item.php:49
+#: \modules\single\templates\related-posts\item.php:41
+msgid "by"
+msgstr ""
+
+#: \modules\dashboard\dashboard-functions.php:19
+#: \modules\shortcodes\listing-categories\templates\holder.php:8
+msgid "Add Listing"
+msgstr ""
+
+#: \modules\dashboard\dashboard-functions.php:26
+msgid "My Listings"
+msgstr ""
+
+#: \modules\dashboard\dashboard-functions.php:33
+#: \modules\dashboard\templates\my-packages.php:10
+msgid "My Packages"
+msgstr ""
+
+#: \modules\dashboard\templates\my-listings.php:5
+msgid "My listings"
+msgstr ""
+
+#: \modules\dashboard\templates\package-not-found.php:2
+msgid "Sorry, you don't have any packages."
+msgstr ""
+
+#: \modules\dashboard\templates\package.php:34
+msgid "Duration"
+msgstr ""
+
+#: \modules\dashboard\templates\package.php:48
+msgid "Count"
+msgstr ""
+
+#: \modules\dashboard\templates\package.php:63
+msgid "Limit"
+msgstr ""
+
+#: \modules\dashboard\templates\package.php:79
+msgid "Regular Price"
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:8
+msgid "You are currently signed in as <strong>%s</strong>."
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:13
+msgid "Sign out"
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:25
+msgid "Have an account?"
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:27
+msgid "Sign in"
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:31
+msgid "If you don&rsquo;t have an account you can %screate one below by entering your email address/username. Your account details will be confirmed via email."
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:31
+msgid "optionally"
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:35
+msgid "You must sign in to create a new listing."
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:43
+msgid "Username"
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:50
+msgid "Your email"
+msgstr ""
+
+#: \modules\job_manager\templates\account-signin.php:52
+msgid "you@yourdomain.com"
+msgstr ""
+
+#: \modules\job_manager\templates\job-submit.php:13
+msgid "Add new listing"
+msgstr ""
+
+#: \modules\job_manager\templates\job-submit.php:65
+msgid "Company Details"
+msgstr ""
+
+#: \modules\job_manager\templates\job-submit.php:88
+msgid "Save Changes"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:102
+msgid "Listing Advanced Search"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:104
+#: \modules\shortcodes\listing-banner\listing-banner.php:97
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:101
+#: \modules\shortcodes\listing-categories\listing-categories.php:106
+#: \modules\shortcodes\listing-list\listing-list.php:112
+#: \modules\shortcodes\listing-package\listing-package.php:105
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:101
+#: \modules\shortcodes\listing-regions\listing-regions.php:106
+#: \modules\shortcodes\listing-search\listing-search.php:114
+#: \modules\shortcodes\listing-simple-search\listing-simple-search.php:114
+#: \modules\shortcodes\listing-slider\listing-slider.php:112
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:101
+msgid "by QODE LISTING"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:118
+#: \modules\shortcodes\listing-categories\listing-categories.php:130
+#: \modules\shortcodes\listing-list\listing-list.php:145
+#: \modules\shortcodes\listing-regions\listing-regions.php:123
+#: \modules\shortcodes\listing-slider\listing-slider.php:133
+msgid "Number of items"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:124
+msgid "Listing Title"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:130
+msgid "Listing Subtitle"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:136
+msgid "Enable load more"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:143
+msgid "Content in Grid"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:150
+msgid "Enable Map"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:157
+msgid "Map in Grid"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:168
+msgid "Enable Keyword Search"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:175
+msgid "Sidebar Banner"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:182
+msgid "Banner Image"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:192
+msgid "Banner title"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:202
+msgid "Banner text"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:212
+msgid "Banner link"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\listing-advanced-search.php:222
+msgid "Banner link text"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\templates\keyword.php:12
+msgid "Type your search here..."
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\templates\keyword.php:16
+msgid "Find Listings"
+msgstr ""
+
+#: \modules\shortcodes\listing-advanced-search\templates\type-not-found.php:2
+msgid "You need to select Listing type."
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:95
+msgid "Listing Banner"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:104
+msgid "Background Image"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:111
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:113
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:113
+msgid "Number"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:121
+msgid "Link"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:126
+msgid "Link Target"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:129
+msgid "Blank"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:130
+msgid "Self"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:137
+#: \modules\shortcodes\listing-list\listing-list.php:119
+#: \modules\shortcodes\listing-search\listing-search.php:121
+msgid "Skin"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:140
+#: \modules\shortcodes\listing-list\listing-list.php:123
+#: \modules\shortcodes\listing-search\listing-search.php:125
+msgid "Dark"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\listing-banner.php:141
+#: \modules\shortcodes\listing-list\listing-list.php:122
+#: \modules\shortcodes\listing-search\listing-search.php:124
+msgid "Light"
+msgstr ""
+
+#: \modules\shortcodes\listing-banner\templates\banner.php:19
+msgid "Show More"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:99
+msgid "Listing Blog List"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:107
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:220
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:248
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:122
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:107
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:208
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:237
+#: \modules\widgets\listing_widget.php:28
+msgid "Category"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:109
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:109
+msgid "Category Slug (leave empty for all)"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:115
+msgid "Number of posts"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:119
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:119
+msgid "Order By"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:122
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:125
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:122
+msgid "Date"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:124
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:124
+msgid "Random"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:129
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:129
+msgid "Order Type"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:132
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:132
+msgid "Descending"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:133
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:133
+msgid "Ascending"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:140
+msgid "Text Legth"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\listing-blog-list.php:146
+msgid "Title Tag"
+msgstr ""
+
+#: \modules\shortcodes\listing-blog-list\templates\item.php:22
+msgid "Read More"
+msgstr ""
+
+#: \modules\shortcodes\listing-categories\listing-categories.php:104
+msgid "Listing Categories"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:110
+msgid "Listing List"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:138
+#: \modules\shortcodes\listing-slider\listing-slider.php:126
+msgid "Listing Category"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:152
+msgid "Number of columns"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:155
+msgid "One Column"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:156
+msgid "Two Columns"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:157
+msgid "Three Columns"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:158
+msgid "Four Columns"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:159
+msgid "Five Columns"
+msgstr ""
+
+#: \modules\shortcodes\listing-list\listing-list.php:160
+msgid "Six Columns"
+msgstr ""
+
+#: \modules\shortcodes\listing-package\listing-package.php:103
+msgid "Listing Packages"
+msgstr ""
+
+#: \modules\shortcodes\listing-package\listing-package.php:112
+msgid "Package Button Text"
+msgstr ""
+
+#: \modules\shortcodes\listing-package\listing-package.php:119
+msgid "Package Button Link"
+msgstr ""
+
+#: \modules\shortcodes\listing-package\templates\holder.php:7
+msgid "View Package"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:99
+msgid "Listing Project Info"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:108
+msgid "Selected Project"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:114
+msgid "If you left this field empty then project ID will be of the current page"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:119
+msgid "Project Info Type"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:123
+msgid "Tag"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:124
+msgid "Author"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:133
+msgid "Project Info Title Type Tag"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:135
+msgid "Set title tag for project title element"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:141
+msgid "Project Info Title"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:142
+msgid "Add project info title before project info element/s"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:147
+msgid "Project Info Title Tag"
+msgstr ""
+
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:332
+#: \modules\shortcodes\listing-project-info\listing-project-info.php:363
+msgid "Id"
+msgstr ""
+
+#: \modules\shortcodes\listing-regions\listing-regions.php:206
+#: \modules\shortcodes\listing-regions\listing-regions.php:234
+msgid "Region"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:112
+msgid "Listing Search"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:133
+msgid "Enable search by Keyword"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:139
+#: \modules\shortcodes\listing-simple-search\listing-simple-search.php:121
+msgid "Enter keyword text"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:146
+msgid "Enable search by type"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:152
+msgid "Enter type text"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:159
+msgid "Enable search by region"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:165
+msgid "Enable search by price"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:178
+msgid "Enter price text"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\listing-search.php:185
+#: \modules\shortcodes\listing-simple-search\listing-simple-search.php:126
+msgid "Enter button text"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\templates\holder.php:67
+#: \modules\shortcodes\listing-search\templates\holder.php:70
+msgid "Choose a Location"
+msgstr ""
+
+#: \modules\shortcodes\listing-search\templates\holder.php:105
+msgid "$0"
+msgstr ""
+
+#: \modules\shortcodes\listing-simple-search\listing-simple-search.php:112
+msgid "Listing Simple Search"
+msgstr ""
+
+#: \modules\shortcodes\listing-slider\listing-slider.php:110
+msgid "Listing Slider"
+msgstr ""
+
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:99
+msgid "Listing Testimonials"
+msgstr ""
+
+#: \modules\shortcodes\listing-testimonials\listing-testimonials.php:115
+msgid "Number of Testimonials"
+msgstr ""
+
+#: \modules\single\templates\comments.php:6
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: \modules\single\templates\comments.php:26
+msgid "Listing Reviews"
+msgstr ""
+
+#: \modules\single\templates\comments.php:46
+msgid "Sorry, the comment form is closed at this time."
+msgstr ""
+
+#: \modules\single\templates\comments.php:55
+msgid "Write Your Review"
+msgstr ""
+
+#: \modules\single\templates\comments.php:63
+msgid "POST A COMMENT"
+msgstr ""
+
+#: \modules\single\templates\comments.php:66
+msgid "Post a Reply to %s"
+msgstr ""
+
+#: \modules\single\templates\comments.php:67
+msgid "cancel reply"
+msgstr ""
+
+#: \modules\single\templates\comments.php:68
+msgid "Send Message"
+msgstr ""
+
+#: \modules\single\templates\comments.php:69
+msgid "Your comment"
+msgstr ""
+
+#: \modules\single\templates\comments.php:73
+#: \modules\single\templates\parts\enquiry.php:9
+msgid "Your Full Name"
+msgstr ""
+
+#: \modules\single\templates\comments.php:73
+msgid "Your Name"
+msgstr ""
+
+#: \modules\single\templates\comments.php:74
+#: \modules\single\templates\parts\enquiry.php:11
+msgid "Your E-mail Address"
+msgstr ""
+
+#: \modules\single\templates\comments.php:74
+msgid "Your Email"
+msgstr ""
+
+#: \modules\single\templates\comments.php:78
+msgid "Your Experience"
+msgstr ""
+
+#: \modules\single\templates\comments.php:80
+msgid "Your full name"
+msgstr ""
+
+#: \modules\single\templates\comments.php:81
+msgid "E-mail address"
+msgstr ""
+
+#: \modules\single\templates\parts\content.php:7
+msgid "The property"
+msgstr ""
+
+#: \modules\single\templates\parts\enquiry.php:8
+msgid "Full Name"
+msgstr ""
+
+#: \modules\single\templates\parts\enquiry.php:10
+msgid "E-mail Address"
+msgstr ""
+
+#: \modules\single\templates\parts\enquiry.php:12
+#: \modules\single\templates\parts\enquiry.php:13
+msgid "Your Message"
+msgstr ""
+
+#: \modules\single\templates\parts\enquiry.php:16
+msgid "Send Your Message"
+msgstr ""
+
+#: \modules\single\templates\parts\map.php:18
+msgid "Listing Location"
+msgstr ""
+
+#: \modules\single\templates\parts\rating.php:20
+msgid "Rate This Article:"
+msgstr ""
+
+#: \modules\single\templates\parts\social-networks.php:21
+msgid "Connect with us"
+msgstr ""
+
+#: \modules\single\templates\parts\tags.php:13
+msgid "Property tags"
+msgstr ""
+
+#: \modules\single\templates\parts\user-listings.php:17
+msgid "More from this employer"
+msgstr ""
+
+#: \modules\single\templates\parts\user-listings.php:23
+msgid "See All"
+msgstr ""
+
+#: \modules\single\templates\parts\video.php:12
+msgid "Property video"
+msgstr ""
+
+#: \modules\single\templates\parts\views.php:17
+msgid "Views"
+msgstr ""
+
+#: \modules\single\templates\related-posts\holder.php:35
+msgid "Related listings"
+msgstr ""
+
+#: \modules\single\templates\review\review.php:39
+msgid "No reviews"
+msgstr ""
+
+#: \modules\single\templates\review\review.php:39
+msgid "Star"
+msgstr ""
+
+#: \modules\single\templates\review\review.php:39
+msgid "Stars"
+msgstr ""
+
+#: \modules\single\templates\sections\header.php:34
+msgid "Contact this business"
+msgstr ""
+
+#: \modules\widgets\listing_widget.php:7
+msgid "Qode Listing Widget"
+msgstr ""
+
+#: \modules\widgets\listing_widget.php:8
+msgid "Add listing element to widget areas"
+msgstr ""
+
+#: \modules\widgets\listing_widget.php:22
+msgid "Type"
+msgstr ""
+
+#: \modules\widgets\listing_widget.php:35
+msgid "Number of Items"
+msgstr ""

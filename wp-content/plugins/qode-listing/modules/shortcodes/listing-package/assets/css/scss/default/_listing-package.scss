@@ -1,0 +1,68 @@
+.qode-ls-packages{
+	.q_price_table.qode_pricing_table_advanced {
+		.qode_pt_image {
+			margin-bottom: 31px;
+		}
+		.qode_price_table_prices {
+			width: 28%;
+		}
+
+		.price_table_inner {
+			.value {
+				top: -8px;
+				left: 2px;
+				font-size: 23px;
+				color: #484848 !important;
+			}
+			.price {
+				font-size: 57px;
+				font-weight: 600;
+			}
+
+			.mark {
+				margin-top: 17px;
+				margin-left: 11px
+			}
+			.qode_pt_icon{
+				color: #484848 !important;
+			}
+
+		}
+
+		.qode_pricing_table_text {
+			li{
+				font-size: 13px;
+				line-height: 21px;
+
+				&.qode_pt_title {
+					padding: 5px 0 18px;
+				}
+
+				ul li {
+					padding: 8px 0;
+				}
+
+			}
+		}
+		.qode_pt_additional_info {
+			margin-top: 50px;
+		}
+
+
+		.price_button .qbutton {
+			margin-top: 27px;
+
+			color: #484848;
+			border-color: #ededed;
+			background-color: #ededed;
+
+			&:hover{
+				color: #fff;
+				border-color: #00a699;
+				background-color: #00a699;
+			}
+
+		}
+
+	}
+}

@@ -1,0 +1,14 @@
+<?php
+
+
+//rename this file to date_from.php  is you want to use it
+
+
+
+$date_from = "2010-09-03";   
+
+
+
+
+
+?>

@@ -1,0 +1,304 @@
+/**
+ * APL Admin UI CSS
+ *
+ * @package advanced-post-list
+ * @subpackage APL_Admin
+ * @subpackage jQuery UI
+ * @subpackage jQuery UI Multiselect
+ * @since 0.4.0
+ */
+
+.ui-tabs-anchor {
+	padding: .1em 1em !important;
+}
+
+.ui-multiselect-close {
+	display: none;
+}
+
+.apl-tooltip {
+	/*text-align: left;*/
+}
+
+.apl-help {
+	cursor: help;
+}
+
+.apl-help-icon {
+	color: #0073aa;
+}
+
+.apl-info-icon:active,
+.apl-info-icon:focus,
+.apl-info-icon:hover {
+	color: #0096dd
+}
+/*
+ * FILTER META BOX (TOP).
+ */
+
+.apl-filter-box-1 {
+	display: flex;
+	margin-bottom: 18px;
+}
+
+.apl-left-minibar {
+	float: left;
+	width: 20%;
+}
+
+.apl-filter-post-type {}
+
+.apl-filter-post-tax-query {
+	float: left;
+	width: 80%;
+}
+
+.apl-tabs-post_type-type {
+	height: 405px;
+}
+
+.apl-tabs-post-type-taxonomies {
+	height: 300px;
+}
+
+.apl-t-li-post-type {
+	float: right !important;
+}
+
+.apl-t-li-post-type h5 {
+	margin: initial;
+}
+
+.apl-chk-req-taxonomies {
+	border-bottom: 1px solid #23282d
+}
+
+.apl-tabs-post-type-taxonomies > ul {
+	min-height: 22px;
+}
+
+.apl-t-terms {
+	overflow-x: hidden !important;
+}
+
+.apl-t-terms label {}
+
+/*
+ * FILTER META BOX (BOTTOM).
+ */
+
+.apl-filter-box-2 {
+	display: flex;
+	margin-bottom: 18px;
+}
+
+.apl-filter-box-2-left {
+	float: left;
+	margin-right: 3%;
+	width: 57%;
+}
+
+.apl-filter-box-2-right {
+	float: left;
+	width: 40%;
+}
+
+.apl-filter-field-left-row {
+	min-height: 42px;
+}
+
+.apl-filter-field-left-row > .apl-list-amount-row {
+	height: 84px;
+}
+
+.apl-filter-field-right-row {
+	min-height: 42px;
+}
+
+.apl-filter-field-row-full {
+	min-height: 42px;
+}
+
+.apl-filter-field-left-row > div:first-child {
+	float: left;
+	width: 35%;
+}
+
+.apl-filter-field-left-row > div:nth-child( 2 ) {
+	float: left;
+	width: 65%;
+}
+
+.apl-spinner-posts_per_page-wrap {
+	float: left;
+	width: 25%;
+}
+
+.apl-spinner-posts_per_page-wrap > span {
+	width: 100%;
+}
+
+.apl-slider-posts_per_page-wrap {
+	float: left;
+	width: 64%;
+	margin: 6px 0 6px 6%;
+}
+
+.apl-slider-handle-posts_per_page {
+	z-index: 0 !important;
+}
+
+.apl-spinner-offset-wrap {
+	float: left;
+	width: 25%;
+}
+
+.apl-spinner-offset-wrap > span {
+	width: 100%;
+}
+
+.apl-slider-offset-wrap {
+	float: left;
+	width: 64%;
+	margin: 6px 0 6px 6%;
+}
+
+.apl-slider-handle-offset {
+	z-index: 0 !important;
+}
+
+apl-filter-field-right-row > input {
+	float: right;
+}
+
+apl-filter-field-right-row > input:after {
+	clear: both;
+}
+
+.apl-ui-ms {
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+	cursor: pointer;
+
+	padding: 0 !important;
+}
+
+.apl-ui-ms > span.ui-icon {
+	right: 0.5em;
+	left: auto;
+	margin-top: -8px;
+	position: absolute;
+	top: 50%;
+}
+
+.apl-ui-ms > span:nth-child(2) {
+	float: left;
+	text-align: left;
+	padding: 0.4em 1.5em 0.4em 1em;
+	display: block;
+	line-height: 1.4;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+button.apl-ui-ms-filter-2-row {
+	width: 48.0% !important;
+}
+
+span.apl-ui-ms-filter-2-row {
+	width: 47.2% !important;
+}
+
+input.apl-text-exclude-posts {
+	width: 100%;
+}
+
+.apl-chkbox-input {
+	float: right;
+	margin-top: 5px !important;
+}
+
+/*
+ * DESIGN META BOX
+ */
+.apl-design-box {
+	display: flex;
+	margin-bottom: 18px;
+}
+
+.apl-design-column {
+	width: 100%;
+}
+
+.apl-design-row {
+	float: left;
+	width: 100%;
+}
+
+.apl-design-row > div:first-child {
+	float: left;
+	width: 20.3%;
+}
+
+.apl-design-row > div:nth-child( 2 ) {
+	float: left;
+	width: 79.7%;
+}
+
+/*
+ * CODE MIRROR
+ */
+.apl-design-column .CodeMirror {
+	margin: 0px 0px 18px 0;
+	padding-bottom: 30px;
+	min-height: 300px;
+	border: 1px solid #ddd;
+	border-bottom: 2px solid #ddd;
+	resize: vertical;
+	overflow: overlay;
+}
+
+.apl-design-column .CodeMirror .CodeMirror-vscrollbar {
+	margin-bottom: 23px;
+}
+
+.apl-design-column .CodeMirror .CodeMirror-scroll {
+	width: 100.5%;
+}
+
+/* BEFORE */
+.apl-textarea-before-wrap > .CodeMirror {
+	min-height: 100px;
+	height: 100px;
+}
+
+/* AFTER */
+.apl-textarea-after-wrap > .CodeMirror {
+	min-height: 100px;
+	height: 100px;
+}
+
+/*
+ * INTERNAL SHORTCODE DIALOG
+ */
+.apl_internal_shortcodes dl > dt {
+	margin-bottom: 3px;
+}
+
+.apl_internal_shortcodes dl ul {
+	margin: 0;
+}
+
+.apl_internal_shortcodes dl ul > li {
+	list-style-type: disc;
+	margin-left: 18px;
+}
+
+.apl_internal_shortcodes dl ul > li ul > li {
+	list-style-type: circle;
+	margin-left: 36px;
+}

@@ -1,0 +1,297 @@
+.page-template-user-dashboard{
+
+
+	%input-style {
+		width: 100%;
+		margin: 0;
+		padding: 14px 25px;
+		border: 1px solid $default-border-color;
+		border-radius: 0;
+		outline: 0;
+		resize: none;
+		font-size: 14px;
+		line-height: 17px;
+		background-color: #fff;
+		color: #818181;
+		font-family:inherit;
+		font-weight: 400;
+		box-sizing: border-box;
+	}
+
+	.qode-membership-dashboard-content-holder{
+        
+        .job-manager-form{
+            
+            .qode-ls-field-holder-wrapper{
+                margin: 0 -17px 24px -17px;
+            }
+
+	        input[type=text] {
+		        @extend %input-style;
+	        }
+
+            .fieldset-job_region{
+                display: block;
+            }
+
+            .fieldset-job_type{
+                .select2-container--default{
+                    .select2-selection--single{
+                        height: 47px;
+                        line-height: 47px;
+                    }
+                }
+            }
+            
+            .qode-ls-field-holder {
+                float: left;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0 17px;
+                box-sizing: border-box;
+                position: relative;
+                width: 50%;
+                
+                div.field,
+                label{
+
+                     float: none;
+                     width: 100%;
+                    .qode-checkbox-label{
+                        width: auto;
+                    }
+
+                }
+
+                label{
+                    &:not(.qode-checkbox-label){
+                        font-size: 12px;
+                        margin-bottom: 0;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                    }
+                }
+
+                fieldset{
+                    border-bottom: none;
+                    margin-bottom: 12px;
+                    padding: 0;
+
+                    textarea{
+                        @extend %input-style;
+                    }
+
+                    .field{
+                        small{
+                            margin-top: 5px;
+                        }
+                    }
+
+
+                }
+
+	            .chosen-container{
+		            display: none;
+	            }
+
+                .field{
+
+                    .account-sign-in{
+                        display: table;
+                        margin: 1.8em 0 -0.7em;
+                        
+                        span, div{
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                        div{
+                            text-align: right;
+                        }
+                    }
+                }
+
+                .fieldset-company_logo{
+                    
+                    .field{
+                        .job-manager-uploaded-files{
+                            float: left;
+                            display: inline-block;
+                            margin-right: 17px;
+                        }
+                        .wp-job-manager-file-upload, .description{
+                            width: auto;
+                            display: inline-block
+                        }
+                    }
+                    .job-manager-uploaded-file-preview{
+                        position: relative;
+                        display: block;
+                        
+                        .job-manager-remove-uploaded-file{
+                            visibility: hidden;
+                            
+                            &:after{
+                                content:"\e051";
+                                font-family: ElegantIcons;
+                                top: 0;
+                                right: 0;
+                                visibility: visible;
+                                font-size: 24px;
+                                font-style: normal;
+                            }
+                        }
+
+                        img{
+                            height: 140px;
+                        }
+                        .job-manager-remove-uploaded-file{
+                            position: absolute;
+                            right: 0;
+                            line-height: 1em;
+                            font-size: 24px;
+                            float: left;
+                        }
+                    }
+                }
+                
+                .fieldset-listing_twitter_url, .fieldset-listing_facebook_url, .fieldset-listing_instagram_url, .fieldset-listing_pinterest_url,
+                .fieldset-listing_soundcloud_url, .fieldset-listing_vimeo_url, .fieldset-listing_youtube_url, .fieldset-listing_skype_url{
+                    .field{
+                        &:before{
+                            display: inline-block;
+                            width: 45px;
+                            height: 45px;
+                            line-height: 45px;
+                            font-family: FontAwesome;
+                            vertical-align: middle;
+                            font-size: 45px;
+                            color: $first-main-color;
+                            position: absolute;
+                        }
+                        
+                        input{
+                            width: calc(100% - 50px);
+                            margin-left: 50px;
+                        }
+                    }
+                }
+                .fieldset-listing_twitter_url{
+                    .field:before{
+                        content: "\f081";
+                    }
+                }
+                .fieldset-listing_facebook_url{
+                    .field:before{
+                        content: "\f082";
+                    }
+                }
+                .fieldset-listing_instagram_url{
+                    .field:before{
+                        content: "\f16d";
+                    }
+                }
+                .fieldset-listing_pinterest_url{
+                    .field:before{
+                        content: "\f0d3";
+                    }
+                }
+                .fieldset-listing_soundcloud_url{
+                    .field:before{
+                        content: "\f1be";
+                        font-size: 38px;
+                    }
+                }
+                .fieldset-listing_vimeo_url{
+                    .field:before{
+                        content: "\f194";
+                    }
+                }
+                .fieldset-listing_youtube_url{
+                    .field:before{
+                        content: "\f166";
+                    }
+                }
+                .fieldset-listing_skype_url{
+                    .field:before{
+                        content: "\f17e";
+                    }
+                }
+
+
+                .qode-ls-type-field-wrapper{
+
+                    margin: 0 0 12px;
+
+                    &>h3{
+                        margin: 40px 0 20px 0;
+                    }
+
+                    .qode-listing-field-holder-title{
+                        margin: 20px 0;
+                    }
+
+                    label:not(.qode-checkbox-label){
+                        margin-bottom: 0;
+                    }
+
+                    .fieldset-job_type_categories{
+                        .qode-ls-checkbox-field {
+                            input[type=checkbox]{
+                                margin-bottom: 22px;
+                        }
+                    }
+                    }
+
+                    .qode-ls-checkbox-field {
+                        input[type=checkbox]{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+
+            }
+
+            .qode-ls-field-holder-full-width{
+                clear: both;
+                width: 100%;
+                
+                fieldset{
+                    padding: 0 18px;
+                }
+            }
+            .qode-ls-full-width-field{
+                width: 100%;
+                text-align: right;
+            }
+            
+            input{
+                &.button{
+                    position: relative;
+                    display: inline-block;
+                    padding: 19px 37px;
+                    font-size: 15.4px;
+                    background-color: #86b73b;
+                    color: $default-background-color;
+                    line-height: 18px;
+                    letter-spacing: 0;
+                    font-weight: 400;
+                    border-radius: 2px;
+                    text-align: center;
+                    cursor: pointer;
+                    border: none;
+                    box-sizing: border-box;
+                    
+                    &:hover{
+                        background-color: #353535;
+                    }
+                }
+            }
+
+            .qode-btn.qode-btn-fullwidth{
+                margin:  12px 0 70px;
+            }
+            
+        }
+    }
+}

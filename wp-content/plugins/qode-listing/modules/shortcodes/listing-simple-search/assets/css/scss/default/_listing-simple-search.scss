@@ -1,0 +1,92 @@
+.qode-ls-simple-search-holder{
+	display: table;
+	width: 100%;
+	background-color: #fff;
+	border: 1px solid $default-border-color;
+	box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	box-sizing: border-box;
+	padding: 18px 26px 18px 38px;
+    
+	.qode-ls-simple-search-holder-part{
+		display: table-cell;
+		vertical-align: middle;
+		box-sizing: border-box;
+		width: 99%;
+		position: relative;
+
+		&.keyword {
+			border-right: 1px solid $default-border-color;
+			padding-right: 20px;
+		}
+		&.submit{
+			width: 1%;
+			padding-left: 26px;
+
+			.qode-ls-simple-search-button {
+				border: none;
+				outline: none;
+				background-color: transparent;
+				white-space: nowrap;
+				cursor: pointer;
+				color: inherit;
+
+			}
+			.qode-ls-simple-search-button-text {
+				font-size: 19px;
+				font-weight: 600;
+				line-height: 35px;
+				padding-right: 20px;
+				display: inline-block;
+				vertical-align: middle;
+				color: inherit;
+			}
+			.qode-ls-simple-search-button-icon {
+				display: inline-block;
+				vertical-align: middle;
+				width: 35px;
+				height: 35px;
+				line-height: 35px;
+				background-color: $first-main-color;
+				color: #fff;
+				border-radius: 100%;
+				font-size: 19px;
+
+				span {
+					display: block;
+					line-height: inherit;
+					&:before {
+						line-height: inherit;
+					}
+				}
+			}
+
+		}
+		input{
+			margin: 0;
+			padding: 9px 0 9px 0;
+			border-radius: 0;
+			border: 0;
+			width: 100%;
+			font-size: 19px;
+			font-weight: 600;
+			line-height: 35px;
+			font-family: inherit;
+			color: inherit;
+			outline:none;
+			box-sizing: border-box;
+
+			&:focus {
+				border: none;
+				outline: none;
+			}
+
+			@include qodePlaceholder{
+				color: inherit;
+				opacity: 1;
+			}
+
+		}
+    }
+
+}

@@ -1,0 +1,37 @@
+.qode-listing-single-holder {
+	article {
+		.qode-ls-single-section-holder {
+			border-bottom: 1px solid $default-border-color;
+		}
+		.qode-ls-single-section-inner {
+			float: left;
+			box-sizing: border-box;
+			&.left {
+				width: 68.5%;
+				padding-right: 35px;
+			}
+			&.right {
+				width: 31.5%;
+				float: right;
+			}
+		}
+	}
+}
+.single-job_listing {
+	div {
+
+		&.ppt {
+			visibility: hidden;
+		}
+
+		&.pp_default {
+			.pp_content {
+				margin: 0 auto;
+			}
+		}
+
+		&.pp_pic_holder + .pp_overlay {
+			opacity: 0.85 !important;
+		}
+	}
+}

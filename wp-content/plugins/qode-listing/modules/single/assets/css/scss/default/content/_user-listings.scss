@@ -1,0 +1,56 @@
+.qode-listing-single-holder{
+	article{
+		.qode-ls-user-listing-holder{
+			margin-top: 35px;
+
+			.qode-ls-user-listing-header{
+				padding: 19px 0;
+				box-sizing: border-box;
+				position: relative;
+
+				.qode-ls-user-listing-title{
+					margin: 0;
+				}
+				.qode-ls-user-listing-link{
+					position: absolute;
+					font-size: 14px;
+					top: 50%;
+					@include qodeTransform(translateY(-50%));
+					right: 0;
+					color: $first-main-color;
+				}
+			}
+
+			.qode-ls-user-listing-item{
+				@include qodeTableLayout();
+				padding: 10px 15% 10px 0;
+				box-sizing: border-box;
+			}
+			.qode-ls-user-listing-item-image{
+				@include qodeTableCellLayout();
+				width: 68px;
+				.qode-ls-user-listing-item-image-inner{
+					display: inline-block;
+					width: 68px;
+					height: 68px;
+					@include qodeBckImageStyle();
+					vertical-align: middle;
+				}
+			}
+			.qode-ls-user-listing-item-text{
+				@include qodeTableCellLayout();
+				padding-left: 15px;
+				box-sizing: border-box;
+				text-align: left;
+				line-height: 1em;
+				.qode-ls-user-listing-date{
+					margin-top: 2px;
+					font-size: 12px;
+					line-height: 18px;
+					font-weight: 500;
+					letter-spacing: -0.24px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,123 @@
+.qode-ls-testimonials{
+
+
+	article {
+		float: left;
+		box-sizing: border-box;
+
+
+		.qode-ls-testimonial-inner {
+			padding: 30px 35px;
+			display: table;
+			width: 100%;
+			box-sizing: border-box;
+			table-layout: fixed;
+			border: 1px solid $default-border-color;
+		}
+
+		.qode-ls-testimonial-left-part {
+			width: 45%;
+			display: table-cell;
+			vertical-align: middle;
+			padding-right: 42px;
+			position: relative;
+
+			.qode-ls-testimonial-quote {
+				position: absolute;
+				left: 59px;
+				top: -25px;
+				font-size: 90px;
+				z-index: -1;
+				color: #eaeaea;
+			}
+
+			.qode-ls-testimonial-image {
+				width: 85px;
+				border-radius: 100%;
+				overflow: hidden;
+				margin-bottom: 10px;
+
+				img {
+					vertical-align: middle;
+				}
+			}
+
+			.qode-ls-testimonial-website {
+				font-size: 12px;
+				font-weight: 500;
+				text-transform: uppercase;
+			}
+		}
+
+		.qode-ls-testimonial-right-part {
+			display: table-cell;
+			vertical-align: middle;
+			width: 55%;
+
+			.qode-ls-testimonial-title {
+				padding-bottom: 17px;
+			}
+
+		}
+
+	}
+
+	/***** Listing List Columns Space - begin *****/
+
+	$columns_space_label: ('no', 'tiny', 'small', 'normal', 'big');
+	$columns_space: (0, 5, 10, 18, 35);
+
+	@for $i from 0 to length($columns_space_label) {
+		&.qode-ls-testimonials-#{nth($columns_space_label,$i+1)}-space {
+			$item_space: nth($columns_space, $i+1);
+			$item_bottom_margin: $item_space * 2;
+
+			.qode-ls-testimonials-inner {
+				margin: 0 -#{$item_space}px;
+			}
+
+			article {
+				padding: 0 #{$item_space}px;
+				margin: 0 0 #{$item_bottom_margin}px;
+			}
+		}
+	}
+	/***** Listing Testimonials Columns Space - end *****/
+
+	/***** Listing Testimonials Columns Width - begin *****/
+
+	$columns_number: ('two', 'three', 'four', 'five','six');
+
+	@for $i from 0 to length($columns_number) {
+		&.qode-ls-testimonials-#{nth($columns_number,$i+1)}-columns {
+
+			article {
+				width: 100% / ($i+2);
+			}
+
+			@if ($i > 1) { // set different break point for four and five columns
+				@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+					article {
+
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			} @else {
+				@media only screen and (min-width: $ipad-portrait-plus-pixel) {
+
+					article {
+
+						&:nth-child(#{$i+2}n+1) {
+							clear: both;
+						}
+					}
+				}
+			}
+		}
+	}
+	/***** Listing Testimonials Columns Width - end *****/
+
+}

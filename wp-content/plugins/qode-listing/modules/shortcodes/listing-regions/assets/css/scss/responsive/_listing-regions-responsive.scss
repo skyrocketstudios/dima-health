@@ -1,0 +1,28 @@
+/* ==========================================================================
+   Listing Category shortcodes responsive style - begin
+   ========================================================================== */
+
+@include ipad-landscape {
+
+	.qode-ls-regions-holder {
+		&.qode-ls-gallery-four-columns{
+			.qode-ls-gallery-item {
+				width: 50%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 680px) {
+
+	.qode-ls-regions-holder {
+		&.qode-ls-gallery-four-columns{
+			.qode-ls-gallery-item {
+				width: 100%;
+			}
+		}
+	}
+}
+/* ==========================================================================
+   Listing Category shortcodes responsive style - end
+   ========================================================================== */
